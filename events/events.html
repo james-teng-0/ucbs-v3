@@ -2,19 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="icon" type="image/png" href="../favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./eventsss.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <title>UCBS - Events</title>
   </head>
   <body>
-   <p>
-      WIP
-   </p>
-
+    <header>
+      <a class="logo-link" href="../index.html"> <img class="logo" src="../ucbs_logo.png"/></a> 
+      <nav>
+      <ul class="nav-links">
+          <li class="dropdown-container">
+          <a style="cursor:default">About Us<i class="fa fa-caret-down"></i></a>
+          <div class="dropdown-content">
+              <a href="../about/about.html">What we do</a>
+              <a href="../team/team.html">Our Team</a>
+          </div>
+          </li>
+          <li><a href="../events/events.html" style="color:rgb(176, 176, 212);">Events</a></li>
+          <li><a href="../sponsors/sponsors.html">Sponsors</a></li>
+          <li><a href="publications.html">Publications</a></li>
+      </ul>
+      </nav>
+      <a class="nav-button">Contact Us</a>
+      <a class="nav-button">Join Us</a>
+    </header>
+    <section class="heading">
+        <img class="conference" draggable="false" src="../event.jpg"/>
+        <h1>Events</h1>
+    </section>
     
-    
+    <div id="calendar"></div>
+    <script type="module" src="./events.js"></script>
   </body>
 </html>
