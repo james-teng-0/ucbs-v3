@@ -150,35 +150,22 @@ h2 {
 figcaption h4 {
     color: #ffffff;
     letter-spacing: 0.3rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight:normal;
 } 
 
 figcaption p {
     color: #97a6fd;
     letter-spacing: 0.2rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
-
-.photo-row {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    margin-top: 5%;
-}   
 
 .photo-row-2 {
     width: 100%;
     display: flex;
-    flex:33.33%;    
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }   
-
-.row-1 {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 
 .row-2 {
     display: flex;
@@ -192,9 +179,56 @@ figure {
 }
 
 figure img {
-    min-width: 300px;
-    max-width: 40%;
-    height: auto;
+    width:  500px;
+    height: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.img-desc {
+    width: 100%;   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e9e9e9;
+    color: black;
+    border-radius: 20px;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .5s;
+}
+
+.emails {
+    display: block;
+    padding-top: 10%; 
+    color: #0a71a5;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.linkedin-icon {
+    width: 48px;
+    height: 48px;
+    margin-top: 50%;
+    border-radius: 0px;
+}
+
+.img-desc h4 {
+    padding-top: 10%;   
+    width: 100%;
+    font-size: 1rem;
+}
+
+.img-wrap {
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+
+.img-wrap:hover .img-desc {
+    opacity: 1;
 }
 
 .center-helper {

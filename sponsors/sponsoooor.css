@@ -132,11 +132,7 @@ header {
     transform: translate(-50%, -50%);
     letter-spacing: 0.5rem;
     font-size: 5rem;
-
-    background-image: linear-gradient(30deg, #ebebeb, #a4b4f7c9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .heading p {
@@ -146,10 +142,7 @@ header {
     transform: translate(-50%, -50%);
     font-size: 2.5rem;
 
-    background-image: linear-gradient(30deg, #ebebeb, #a4b4f7c9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: white;
 }
 
 .sponsor-section {
