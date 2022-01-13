@@ -49,6 +49,7 @@ header {
 
 .nav-button {
     color: white;
+    text-decoration: none;
     margin-left: 20px;  
     padding: 9px 25px;
     background-color: rgba(86, 86, 107, 1);
@@ -191,7 +192,7 @@ header {
 }
 
 .image-container img {
-    max-width: 25%;
+    max-width: 40%;
     margin-top: 10%;
     border: 0;
     vertical-align: middle;
@@ -215,4 +216,3 @@ header {
     border-radius: 0.5rem;
     cursor: pointer;
 }
-

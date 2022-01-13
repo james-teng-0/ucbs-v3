@@ -49,6 +49,7 @@ header {
 .nav-button {
     color: white;
     margin-left: 20px;  
+    text-decoration: none;
     padding: 9px 25px;
     background-color: rgba(86, 86, 107, 1);
     border: none;

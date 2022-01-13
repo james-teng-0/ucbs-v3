@@ -12,8 +12,8 @@ function scrollHandler() {
 
 
 const api = new GhostContentAPI({
-  url: 'https://ucbs.ghost.io',
-  key: 'fe48fd4d7d639f9adbd93cdf00',
+  url: 'https://www.unswcbs.com/blog',
+  key: '837c5e73ef5b72d3b5e9e23be8',
   version: 'v2'
 });
 

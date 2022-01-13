@@ -9,6 +9,7 @@
 html, body {
   font-size:100%;
   background: #0d0d2b;
+  overflow-x: hidden;
 }
 
 header {
@@ -50,6 +51,7 @@ header {
 .nav-button {
   color: white;
   margin-left: 20px;  
+  text-decoration: none;
   padding: 9px 25px;
   background-color: rgba(86, 86, 107, 1);
   border: none;
@@ -148,4 +150,56 @@ header {
 
 .fc-daygrid-event {
   cursor: pointer;
+}
+
+.fc-daygrid-day-number, .fc-col-header-cell-cushion {
+  text-decoration: none;
+  color: black;
+}
+
+.past-events-title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+.row {
+  margin-bottom: 20vh;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  border: 0;
+}
+
+.card {
+  width: 70%;
+}
+
+
+.space {
+  height: 50vh;
+}
+
+p { 
+  margin-bottom: 1em; 
+}
+
+.card-text p:last-child { 
+  margin-bottom: 0em; 
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.small {
+  width: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }

@@ -19,15 +19,15 @@ header {
   background-color: #0d0d2b;
 }
 
-.logo-link {
-  margin-right: auto;
-}
-
 .logo {
   cursor: pointer;
   margin-right: auto;
   height: 70px;
   width: auto;
+}
+
+.logo-link {
+  margin-right: auto;
 }
 
 .nav-links {

@@ -2,7 +2,6 @@ import {defineConfig} from 'vite'
 import { resolve } from 'path'
 
 module.exports = defineConfig({
-    base: '/ucbs-v3/',
     build: {
         rollupOptions: {
             input: {
