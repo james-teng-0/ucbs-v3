@@ -131,7 +131,8 @@ header {
     justify-content: center;
 }
 
-h1 {
+/************TEAM SECTION*************/
+#team    {
     position: absolute;
     top : 50%;
     left: 50%;
@@ -161,14 +162,14 @@ figcaption p {
     font-size: 1.5rem;
 }
 
-.photo-row-2 {
+.photo-row {
     width: 100%;
     display: flex;
     margin-top: 5%;
     margin-bottom: 2%;
 }   
 
-.row-2 {
+.row {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -232,6 +233,67 @@ figure img {
     opacity: 0.9;
 }
 
-.center-helper {
+.center-helper {    
     display: flex;
+    justify-content: center;
+}
+
+/**********STYLING FOR DIRECTOR SECTION**********/
+
+#director-heading {
+    color: white;
+}
+
+
+.img-wrap-dir {
+    position: relative;
+    height: 350px;
+    width: 350px;
+}
+
+.img-wrap-dir:hover .img-desc {
+    opacity: 0.9;
+}
+
+
+.director-figure img {
+    width:  350px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#linkedin-icon-dir {
+    width: 48px;
+    height: 48px;
+    margin-top: 30%;
+    border-radius: 0px;
+}
+
+.vert-line {
+    position: relative;
+}
+
+.vert-line:after {
+    content:"";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #203354;
+    transform: translate(-50%);
+}
+
+.no-top-spacing {
+    margin-top:0;
+    padding-top:0;
+}
+
+.left-img {
+    margin-left: 15%;
+}
+
+.right-img {
+    margin-right: 15%;
 }
