@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+
+@keyframes FadeIn {
+  0% {};
+  100% {background-color: #96CEB4;};
+}
+
 :root {
   font-size: 1vw;
 }
@@ -144,13 +150,9 @@ section {
 }
 
 .intro {
-  /* grid-column: 2/8; */
   width: 50%;
   padding: 10vh 0 0 5vw;
   padding: 0 0 0 5vw;
-  /* margin-top: 20vh; */
-  /* display:flex;
-  align-items: center; */
 }
 
 .intro h1 {
@@ -165,26 +167,44 @@ section {
   color: #7c81cc;
 }
 
-button {
-  margin-right: 6.5%;
-  margin-top: 80px;
-  background-color: #dcbb0b;
-  border: none;
+.intro .btn-container {
+  width: 80%;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro button {
+  /* background-color: #dcbb0b; */
   border-radius: 5px;
   font-size: 1.5rem;
   color: black;
-  width: 40%;
-  height: 50px;
+  width: 45%;
+  height: 2em;
+  border-radius: 50px;
   position: relative;
+  transition: ease-out 0.35s;
+}
+ 
+.intro .intro-left-button {
+  border: 1px solid #FFE162;
+  background-color: transparent;
+  color: #FFE162;
 }
 
-button span {
+.intro .intro-right-button {
+  border: none;
+  background-color: #FFE162;
+  color: black;
+}
+
+.intro button span {
   position: relative;
   z-index: 2;
 }
 
-button:after {
-  border-radius: 5px;
+/* .intro button:after {
+  border-radius: inherit;
   position: absolute;
   content: "";
   top: 0;
@@ -193,10 +213,14 @@ button:after {
   height: 100%;
   background-color: #e9c912;
   transition: all 0.35s;
-}
+} */
 
-button:hover:after {
-  width: 100%;
+.intro button:hover {
+  background-color: #b9c4fc;
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in;
+  border: none;
+  color: black;
 }
 
 .main-img {
@@ -259,7 +283,7 @@ button:hover:after {
   color: transparent;
 }
 
-.card {
+/* .card {
   background: #eaeafd;
   border: 0;
   margin: 5%;
@@ -269,44 +293,6 @@ button:hover:after {
   text-align: center;
 }
 
-#get-involved h1 {
-  margin-top: 3vh;
-  font-size: 3rem;
-  background-image: linear-gradient(60deg, #7bceeb, #a7c7e7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.involved-container {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.step-container {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-figure img {
-  max-width: 50%;
-  height: auto;
-}
-
-figcaption {
-  margin-top: 2vh;
-}
-
-figcaption h4 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 3vh;
-  letter-spacing: 0.05rem;
-}
 
 .form-button {
   color: white;
@@ -341,6 +327,49 @@ figcaption h4 {
 #email-input:focus {
   outline: none;
   border-color: #ffb703;
+} */
+
+
+.card-deck.get-involved {
+  height: 50vh;
+  margin-top: 4em;
+}
+
+.get-involved .card {
+  margin: 0;
+  background-color: transparent;
+  height: 90%;
+  color: white;
+  text-align: center;
+}
+
+.get-involved .card img {
+  width: 50%;
+  height: auto;
+  margin: 0.5em auto 0 auto;
+}
+
+
+.card-body > a {
+  margin: 0 0.5em;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em;
+  background-color: rgb(35, 96, 167);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 4em;
+}
+
+.get-involved .card a:hover {
+  background-color: rgba(35, 96, 167, 0.8);
+  color: white;
 }
 
 .footer-image {
@@ -351,6 +380,7 @@ figcaption h4 {
 .footer {
   height: 2vh;
 }
+
 
 /* Media Queries */
 
