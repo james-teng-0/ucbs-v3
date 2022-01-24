@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>UCBS - Team</title>
-    <link rel="stylesheet" href="/assets/team.17617665.css">
+    <link rel="stylesheet" href="/assets/team.fb89d8b0.css">
   </head>
   <body>
       <header>
           <a class="logo-link" href="../index.html"> <img class="logo" src="../ucbs_logo.png"/></a> 
           <nav>
-          <ul class="nav-links">
+          <ul class="nav-links">  
               <li class="dropdown-container">
               <a style="cursor:default">About Us<i class="fa fa-caret-down"></i></a>
               <div class="dropdown-content">
@@ -33,38 +34,170 @@
           <a class="nav-button" href="mailto:inquiries@unswcbs.com">Contact Us</a>
           <a class="nav-button">Join Us</a>
       </header>
-      <div class="container">
+      
+      <div class="banner-container">
         <img src="../top_banner.png" draggable="false" class="top-banner"/>
-        <h1>OUR TEAM</h1>
+        <h1 id="team">OUR TEAM</h1>
       </div>
-      <div class="title">
+
+      <div class="exec-title">
         <h2>EXECUTIVES</h2>
       </div>
-      <div class="center-helper">
-        <div class="photo-row-2">
-          <div class="row-2">
-            <figure style="margin-left:400px">
-              <div class="img-wrap">
-                <img src="../doodle.png"/>
-                <div class="img-desc">
-                  <a href="mailto:kmao@iluvucbs.com" class="emails">kmao@iluvucbs.com</a>
-                  <h4>
-                    Second Year Computer Science/Commerce Student
-                  </h4>
-                  <p>
-                    I love to eat KBBQ.
-                  </p>
-                  <a href="https://www.linkedin.com/in/kmao/" target="_blank"><img src="../linkedin.png" class="linkedin-icon"/></a>
+     
+        
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="carousel-indicator" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-indicator" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-indicator" data-slide-to="1"></li>
+                <li data-target="#carousel-indicator" data-slide-to="2"></li>
+                <li data-target="#carousel-indicator" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">ROGER CHEN</h4>
+                            <p class="card-text">CO-PRESIDENT</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../doodle.png" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">KEVIN MAO</h4>
+                            <p class="card-text">CO-PRESIDENT</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">PAJ SAE-LIM</h4>
+                            <p class="card-text">CO-PRESIDENT</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">ERIC NING</h4>
+                            <p class="card-text">VICE-PRESIDENT</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">AVNEET SINGH</h4>
+                            <p class="card-text">VICE-PRESIDENT</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">USYD RANDOM</h4>
+                            <p class="card-text">TREASURER</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-lg-4">
+                        <div class="card">
+                          <img src="../stick-figure.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h4 class="card-title">ALICE LIAO </h4>
+                            <p class="card-text">TREASURER</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <figcaption>
-                <h4>KEVIN MAO</h4>
-                <p>CO-PRESIDENT</p>
-              </figcaption>
-            </figure>
+
+              <div class="carousel-item">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-4">
+                      <div class="card">
+                        <img src="../stick-figure.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h4 class="card-title">EVA WU</h4>
+                          <p class="card-text">SECRETARY</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                      <div class="card">
+                        <img src="../stick-figure.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h4 class="card-title">JAMES TENG</h4>
+                          <p class="card-text">HEAD OF TECHNOLOGY</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                      <div class="card">
+                        <img src="../stick-figure.jpg" class="card-img-top">
+                        <div class="card-body">
+                          <h4 class="card-title">USYD RANDOM</h4>
+                          <p class="card-text">EPIC ROLE</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+              </div>
+              <a href="#carousel-indicator" role="button" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a href="#carousel-indicator" role="button" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
           </div>
-          <div class="row-2">
-            <figure style="margin-right:400px">
+        </div>
+      </div>
+
+      <div class="exec-title" id="director-heading">
+        <h2>DIRECTORS</h2>
+      </div>
+<!-- 
+
+      <div class="center-helper">
+        <div class="photo-row">
+          <div class="row">
+            <figure>
               <div class="img-wrap">
                 <img src="../paj.jpg"/>
                 <div class="img-desc">
@@ -84,12 +217,29 @@
               </figcaption>
             </figure>
           </div>
-        </div>
-      </div>
-      <div class="center-helper">
-        <div class="photo-row-2">
-          <div class="row-2">
-            <figure style="margin-left:400px">
+          <div class="row">
+            <figure>
+              <div class="img-wrap">
+                <img src="../doodle.png"/>
+                <div class="img-desc">
+                  <a href="mailto:kmao@iluvucbs.com" class="emails">kmao@iluvucbs.com</a>
+                  <h4>
+                    Second Year Computer Science/Commerce Student
+                  </h4>
+                  <p>
+                    I love to eat KBBQ.
+                  </p>
+                  <a href="https://www.linkedin.com/in/kmao/" target="_blank"><img src="../linkedin.png" class="linkedin-icon"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KEVIN MAO</h4>
+                <p>CO-PRESIDENT</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure>
               <div class="img-wrap">
                 <img src="../avneet.jfif"/>
                 <div class="img-desc">
@@ -109,10 +259,15 @@
               </figcaption>
             </figure>
           </div>
-          <div class="row-2">
-            <figure style="margin-right:400px">
+        </div>
+      </div>
+
+      <div class="center-helper">
+        <div class="photo-row">
+          <div class="row">
+            <figure>
               <div class="img-wrap">
-                <img src="../mayc.png"/>
+                <img src="../james.jpg"/>
                 <div class="img-desc">
                     <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
                     <h4>
@@ -130,13 +285,8 @@
               </figcaption>
             </figure>
           </div>
-        </div>
-      </div>
-
-      <div class="center-helper">
-        <div class="photo-row-2">
-          <div class="row-2">
-            <figure style="margin-left:400px">
+          <div class="row">
+            <figure>
               <div class="img-wrap">
                 <img src="../eva.png"/>
                 <div class="img-desc">
@@ -156,8 +306,8 @@
               </figcaption>
             </figure>
           </div>
-          <div class="row-2">
-            <figure style="margin-right:400px">
+          <div class="row">
+            <figure>
               <div class="img-wrap">
                 <img src="../alice.png"/>
                 <div class="img-desc">
@@ -180,7 +330,211 @@
         </div>
       </div>
 
+    <div class="center-helper" style="margin-top:20vh"> 
+      <h2> DIRECTORS </h2>
+    </div>
+      <div class="center-helper">
+        <div class="photo-row" id="no-space">
+          <div class="row">
+            <h2>EDUCATION</h2>
+          </div>
+        </div>
+        <div class="photo-row">
+          <div class="row">
+            <h2>SOCIALS</h2>
+          </div>
+        </div>
+      </div>
+      <div class="center-helper">
+        <div class="photo-row no-top-spacing">
+          <div class="row">
+            <figure class="director-figure left-img">
+              <div class="img-wrap-dir">
+                <img src="../cameron.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                      Bachelor of Computer Science
+                    </h4> 
+                    <p>
+                      "It is said that greatness is a transitory experience"
+                    </p>
+                    <a href="https://www.linkedin.com/in/cameron-baker-859b95166/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>CAMERON BAKER</h4>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure right-img">
+              <div class="img-wrap-dir">
+                <img src="../kirat.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                      Bachelor of Commerce (Information Systems, Business Analytics)
+                    </h4> 
+                    <p>
+                      "Limits like fears are often just an illusion"
+                    </p>
+                    <a href="https://www.linkedin.com/in/kirat-s" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KIRAT SINGH</h4>
+                </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure left-img">
+              <div class="img-wrap-dir">
+                <img src="../sanjith.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                      Bachelor of Actuarial Studies/Commerce
+                    </h4> 
+                    <p>
+                      "If at first, you don't succeed. Then skydiving definitely isn't for you."
+                    </p>
+                    <a href="https://www.linkedin.com/in/sanjith-de-silva-a2a17b172/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption style="display:flex; text-align:center;">
+                <h4>SANJITH DE SILVA</h4>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure right-img">
+              <div class="img-wrap-dir">
+                <img src="../eunice.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                      Bachelor of Commerce/Economics                    
+                    </h4> 
+                    <p>
+                      "i like beans."
+                    </p>
+                    <a href="https://www.linkedin.com/in/eunicechxn/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>EUNICE CHAN</h4>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="center-helper">
+        <div class="photo-row">
+          <div class="row">
+            <h2>CAREERS</h2>
+          </div>
+        </div>
+        <div class="photo-row">
+          <div class="row">
+            <h2>HUMAN RESOURCES</h2>
+          </div>
+        </div>
+      </div>
+      <div class="center-helper">
+        <div class="photo-row no-top-spacing">
+          <div class="row">
+            <figure class="director-figure left-img">
+              <div class="img-wrap-dir">
+                <img src="../doodle.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                    Second Year Actuarial/Law Student
+                    </h4> 
+                    <p>
+                    I love games.
+                    </p>
+                    <a href="https://www.linkedin.com/in/james/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KEVIN</h4>
+                <p>CRYPTO MASTERMIRND</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure right-img">
+              <div class="img-wrap-dir">
+                <img src="../doodle.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                    Second Year Actuarial/Law Student
+                    </h4> 
+                    <p>
+                    I love games.
+                    </p>
+                    <a href="https://www.linkedin.com/in/james/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KEVIN</h4>
+                <p>CRYPTO MASTERMIRND</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure left-img">
+              <div class="img-wrap-dir">
+                <img src="../doodle.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                    Second Year Actuarial/Law Student
+                    </h4> 
+                    <p>
+                    I love games.
+                    </p>
+                    <a href="https://www.linkedin.com/in/james/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KEVIN</h4>
+                <p>CRYPTO MASTERMIRND</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="row">
+            <figure class="director-figure right-img">
+              <div class="img-wrap-dir">
+                <img src="../doodle.png"/>
+                <div class="img-desc">
+                    <a href="mailto:inquiries@unswcbs.com" class="emails">inquiries@unswcbs.com</a>
+                    <h4>
+                    Second Year Actuarial/Law Student
+                    </h4> 
+                    <p>
+                    I love games.
+                    </p>
+                    <a href="https://www.linkedin.com/in/james/" target="_blank"><img src="../linkedin.png" id="linkedin-icon-dir"/></a>
+                </div>
+              </div>
+              <figcaption>
+                <h4>KEVIN</h4>
+                <p>CRYPTO MASTERMIRND</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div> -->
       
 
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </html>
