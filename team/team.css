@@ -8,11 +8,11 @@
 
 html, body {
     font-size:100%;
-    background: #0D0D2B;
+    background: #0D0D2B !important;
 }
 
 header {
-    display: flex;
+    display: flex !important;
     justify-content: flex-end;
     position: relative;
     align-items: center;
@@ -116,7 +116,7 @@ header {
     display: block;
 }
 
-.container {
+.banner-container {
     position: relative;
     text-align: center;
 }
@@ -126,7 +126,7 @@ header {
     width: 100%;
 }
 
-.title {
+.exec-title {
     display: flex;
     justify-content: center;
 }
@@ -143,14 +143,15 @@ header {
 }   
 
 h2 {
-    margin-top: 2%;
-    color: #ffffff;
-    letter-spacing: 0.5rem;
-    font-size: 3rem;
+    margin-top: 2% !important;
+    margin-bottom: 5% !important;
+    color: #ffffff !important;
+    letter-spacing: 0.5rem !important;
+    font-size: 3rem !important;
 }
 
 figcaption h4 {
-    color: #ffffff;
+    color: black;
     letter-spacing: 0.3rem;
     font-size: 2rem;
     font-weight:normal;
@@ -240,6 +241,7 @@ figure img {
 /**********STYLING FOR DIRECTOR SECTION**********/
 
 #director-heading {
+    margin-top: 7%;
     color: white;
 }
 
@@ -303,4 +305,20 @@ figure img {
 
 .card-deck {
     width: 90%;
+}
+
+.top {
+    top: 0;
+    bottom: auto;
+}
+
+.carousel-caption h1 {
+    color: black;
+    font-weight: 450;
+    font-size: 2.5rem;
+}
+
+.carousel-indicators {
+    position: relative;
+    bottom: -50px !important;
 }
