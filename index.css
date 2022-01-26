@@ -7,11 +7,15 @@
 }
 
 @keyframes FadeIn {
-  0% {
-  }
-  100% {
-    background-color: #96ceb4;
-  }
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.fadeIn {
+  animation-name: FadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 :root {
@@ -22,6 +26,7 @@ html,
 body {
   background-color: #0d0d2b;
   font-size: 1vw;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -86,10 +91,6 @@ nav {
   color: white;
 }
 
-.fa {
-  margin-left: 5px;
-}
-
 /* The dropdown container */
 .dropdown-container {
   float: left;
@@ -143,12 +144,19 @@ section {
 }
 
 .page1-content {
-  position: absolute;
+  position: relative;
+  height: 84.5vh;
   display: flex;
-  height: 90vh;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: repeat(12, 1fr); */
+}
+
+.fas.fa-angle-double-down {
+  font-size: 2.5em; 
+
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .logo-link {
@@ -157,7 +165,6 @@ section {
 
 .intro {
   width: 50%;
-  padding: 10vh 0 0 5vw;
   padding: 0 0 0 5vw;
 }
 
@@ -230,7 +237,6 @@ section {
 }
 
 .main-img {
-  float: right;
   height: 100%;
   width: 50%;
 }
@@ -406,7 +412,7 @@ section {
 
 /* Media Queries */
 
-@media (max-width: 1063px) {
+@media (max-width: 990px) {
   .card-group {
     position: absolute;
     left: 50%;
