@@ -6,10 +6,12 @@
   box-sizing: border-box;
 }
 
-
 @keyframes FadeIn {
-  0% {};
-  100% {background-color: #96CEB4;};
+  0% {
+  }
+  100% {
+    background-color: #96ceb4;
+  }
 }
 
 :root {
@@ -185,16 +187,16 @@ section {
   position: relative;
   transition: ease-out 0.35s;
 }
- 
+
 .intro .intro-left-button {
-  border: 1px solid #FFE162;
+  border: 1px solid #ffe162;
   background-color: transparent;
-  color: #FFE162;
+  color: #ffe162;
 }
 
 .intro .intro-right-button {
   border: none;
-  background-color: #FFE162;
+  background-color: #ffe162;
   color: black;
 }
 
@@ -329,32 +331,49 @@ section {
   border-color: #ffb703;
 } */
 
+.card-columns {
+  text-align: center;
+}
 
 .card-deck.get-involved {
-  height: 50vh;
-  margin-top: 4em;
+  margin: 0;
+  width: 100vw;
+  text-align: center;
 }
 
 .get-involved .card {
   margin: 0;
   background-color: transparent;
-  height: 90%;
+  height: 420px;
   color: white;
   text-align: center;
 }
 
-.get-involved .card img {
-  width: 50%;
-  height: auto;
-  margin: 0.5em auto 0 auto;
+.get-involved .card-body > h2 {
+  font-size: 25px;
 }
 
+.get-involved .card img {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  margin: 30px auto 0 auto;
+}
 
-.card-body > a {
+.card-body .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto 0 auto;
+}
+
+.links-container > a {
+  display: inline-block;
   margin: 0 0.5em;
+  font-size: 15px;
   color: white;
   text-decoration: none;
-  padding: 0.5em;
+  padding: 10px;
   background-color: rgb(35, 96, 167);
   border: none;
   border-radius: 50px;
@@ -364,7 +383,7 @@ section {
 
 .social-icon {
   display: inline-block;
-  width: 4em;
+  width: 50px;
 }
 
 .get-involved .card a:hover {
@@ -381,6 +400,14 @@ section {
   height: 2vh;
 }
 
-
 /* Media Queries */
 
+@media (max-width: 700px) {
+  .card-group {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 100vw;
+  }
+}
