@@ -18,7 +18,7 @@ const api = new GhostContentAPI({
 });
 
 api.posts
-  .browse({ limit: window.screen.width < 760 ? 3 : 6, include: "tags" })
+  .browse({ limit: window.innerWidth < 760 ? 3 : 6, include: "tags" })
   .then((posts) => {
     var temp = document.getElementsByTagName("template")[0]; // reference of template tag in DOM;
     posts.forEach((post) => {
