@@ -8,8 +8,8 @@
 
 
 @keyframes FadeIn {
-  0% {};
-  100% {background-color: #96CEB4;};
+  0% {}
+  100% {background-color: #96CEB4}
 }
 
 :root {
@@ -380,7 +380,3 @@ section {
 .footer {
   height: 2vh;
 }
-
-
-/* Media Queries */
-
