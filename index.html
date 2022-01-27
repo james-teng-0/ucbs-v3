@@ -14,6 +14,27 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>UNSW Cryptocurrency & Blockchain Society</title>
+    <!-- <script>
+      const handleEmailInput = (event) => {
+          const inputEle = event.currentTarget;
+          const response = inputEle.value;
+          const classes = InputEle.classList;
+
+          if (response == "") {
+            if (classes.contains("valid")) {
+              classes.remove("valid");
+            } else if (classes.contains("invalid")) {
+              classes.remove("invalid")
+            }
+          } else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(response)) {
+            classes.add("valid");
+          } else {
+            classes.add("invalid");
+          }
+
+          console.log(classes);
+        }
+    </script> -->
   </head>
   <body>
     <section>
@@ -102,7 +123,7 @@
 				<img class="card-img-top" src="social-media.png" alt="Card image cap">
 				<div class="card-body">
 					<h2>Follow our Socials.</h2>
-					<div class="side-block" >
+					<div class="social-icons-container" >
 						<a href="" target="_blank" class="social-icon"><img
 								src="https://img.icons8.com/office/96/000000/facebook.png" /></a>
 						<a href="" target="_blank" class="social-icon"><img
@@ -116,9 +137,9 @@
 				<img class="card-img-top" src="email.png" alt="Card image cap">
 				<div class="card-body">
 					<h2>Subscribe to our Newsletter.</h2>
-					<div class="input-container">
-						<input type="email" placeholder="Email" id="email-input">
-						<!-- <span class="floating-label">Email</span> -->
+					<div class="email-input-field">
+						<input type="text" id="email-input" required>
+						<label for="email">Email:</label>
 					</div>
 				</div>
 			</div>

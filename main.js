@@ -16,9 +16,9 @@ const api = new GhostContentAPI({
   key: "837c5e73ef5b72d3b5e9e23be8",
   version: "v2",
 });
-
+// window.innerWidth < 760 ? 3 : 6;
 api.posts
-  .browse({ limit: window.innerWidth < 760 ? 3 : 6, include: "tags" })
+  .browse({ limit: 6, include: "tags" })
   .then((posts) => {
     var temp = document.getElementsByTagName("template")[0]; // reference of template tag in DOM;
     posts.forEach((post) => {
@@ -36,3 +36,5 @@ api.posts
       cardContainer.appendChild(card); // append the template's copy to the page
     });
   });
+
+
