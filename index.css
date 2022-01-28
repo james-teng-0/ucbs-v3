@@ -7,8 +7,12 @@
 }
 
 @keyframes FadeIn {
-  0% {opacity: 0}
-  100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fadeIn {
@@ -140,7 +144,7 @@ section {
 
   position: relative;
   /* overflow:hidden; */
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 .page1-content {
@@ -150,8 +154,9 @@ section {
   align-items: center;
 }
 
-.fas.fa-angle-double-down {
-  font-size: 2.5em; 
+.fas.fa-angle-down {
+  font-size: 2.5em;
+  color: #342ccc;
 
   position: absolute;
   top: 90%;
@@ -413,13 +418,13 @@ section {
   margin: 0;
   padding: 0;
   opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .social-icon > img:hover {
-  opacity: .5;
-  transition: .3s ease-in-out;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
 
 .email-input-field {
@@ -458,17 +463,50 @@ input:invalid {
   outline: 0;
 }
 
-.email-input-field > input:focus, .email-input-field > input:valid {
+.email-input-field > input:focus,
+.email-input-field > input:valid {
   border-color: #00dd22;
 }
 
-.email-input-field > input:focus~label, .email-input-field > input:valid~label {
+.email-input-field > input:focus ~ label,
+.email-input-field > input:valid ~ label {
   font-size: 14px;
   top: -24px;
   color: #00dd22;
 }
 
+.container {
+  width: 100%;
+}
 
+.row {
+  display: flex;
+}
+
+.row > div {
+  padding: 100px;
+}
+
+.text {
+  width: 50%;
+  color: white;
+}
+
+.text p {
+  font-size: 0.7rem;
+}
+
+.image {
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.container .row:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
 
 .footer-image {
   margin-top: 8vh;
@@ -480,6 +518,11 @@ input:invalid {
 }
 
 /* Media Queries */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px;
+  }
+}
 
 @media (max-width: 990px) {
   .card-group {
