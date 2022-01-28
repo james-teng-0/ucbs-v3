@@ -322,3 +322,9 @@ figure img {
     position: relative;
     bottom: -50px !important;
 }
+
+.carousel-header {
+    color:#fff;
+    text-align:center;
+    padding:1em 0;
+}
