@@ -241,7 +241,7 @@ figure img {
 /**********STYLING FOR DIRECTOR SECTION**********/
 
 #director-heading {
-    margin-top: 7%;
+    margin-top: 15%;
     color: white;
 }
 
@@ -312,13 +312,26 @@ figure img {
     bottom: auto;
 }
 
-.carousel-caption h1 {
-    color: black;
-    font-weight: 450;
-    font-size: 2.5rem;
+.card {
+    border: 0 !important;
+}
+
+.card-body {
+    background-color: #0d0d2b !important;
+    color: white;
+    text-align: center;
 }
 
 .carousel-indicators {
+    bottom: -150px !important;
+}
+
+.carousel-caption {
+    bottom: -200px !important;
+}
+
+.carousel-caption h1 {
+    color:black;
     position: relative;
     bottom: -50px !important;
 }

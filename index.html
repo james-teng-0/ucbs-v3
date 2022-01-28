@@ -1,134 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./index.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@tryghost/content-api@1.2.6/umd/content-api.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>UNSW Cryptocurrency & Blockchain Society</title>
-  </head>
-  <body>
-    <section>
-      <header>
-        <a class="logo-link" href="index.html"> <img class="logo" src="./ucbs_logo.png"/></a> 
-        <nav>
-          <ul class="nav-links">
-            <li class="dropdown-container">
-              <a style="cursor:default">About Us<i class="fa fa-caret-down"></i></a>
-              <div class="dropdown-content">
-                <a href="./about/about.html">What we do</a>
-                <a href="./team/team.html">Our Team</a>
-              </div>
-            </li>
-            <li><a href="./events/events.html">Events</a></li>
-            <li><a href="./sponsors/sponsors.html">Sponsors</a></li>
-            <li><a href="https://unswcbs.com/blog/">Publications</a></li>
-          </ul>
-        </nav>
-        <a class="nav-button" href="mailto:inquiries@unswcbs.com">Contact Us</a>
-        <a class="nav-button">Join Us</a>
-      </header>
-      <div class="page1-content">
-        <div class="intro">
-            <h1>
-              UNSW's Cryptocurrency & <br> Blockchain Society.   
-            </h1> 
-            <p>
-              Supported by UNSW's prestigious engineering department, UNCB works to increase recognition and awareness of blockchain technology
-            </p>
-            <div class="btn-container">
-              <button class="intro-left-button" style="float:left;"><span>Newsletter</span></button>
-              <button class="intro-right-button"><span>Events</span></button>
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@tryghost/content-api@1.2.6/umd/content-api.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>UNSW Cryptocurrency & Blockchain Society</title>
+  <!-- <script>
+      const handleEmailInput = (event) => {
+          const inputEle = event.currentTarget;
+          const response = inputEle.value;
+          const classes = InputEle.classList;
+
+          if (response == "") {
+            if (classes.contains("valid")) {
+              classes.remove("valid");
+            } else if (classes.contains("invalid")) {
+              classes.remove("invalid")
+            }
+          } else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(response)) {
+            classes.add("valid");
+          } else {
+            classes.add("invalid");
+          }
+
+          console.log(classes);
+        }
+    </script> -->
+</head>
+
+<body>
+  <section>
+    <header>
+      <a class="logo-link" href="index.html"> <img class="logo" src="./ucbs_logo.png" /></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./team/team.html">Our Team</a></li>
+          <li><a href="./events/events.html">Events</a></li>
+          <li><a href="./sponsors/sponsors.html">Sponsors</a></li>
+          <li><a href="https://unswcbs.com/blog/">Publications</a></li>
+          <li><a class="nav-button" href="mailto:inquiries@unswcbs.com">Contact Us</a></li>
+          <li><a class="nav-button">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page1-content">
+      <div class="intro">
+        <h1>
+          UNSW's Cryptocurrency & <br> Blockchain Society.
+        </h1>
+        <p>
+          Australia's pinnacle society for blockchain discovery and peer to peer collaboration
+        </p>
+        <div class="btn-container">
+          <button class="intro-left-button" style="float:left;"><span>Newsletter</span></button>
+          <button class="intro-right-button"><span>Events</span></button>
         </div>
-        <!-- <a draggable="false" class="scroll-container">
+      </div>
+      <img src="./bitcoin.svg" draggable="false" alt="Bitcoin" class="main-img" />
+      <!-- <a draggable="false" class="scroll-container">
           <span class="scroll-label">SCROLL FOR MORE</span>
           <div class="scroll-indicator"></div>
         </a> -->
-        <img src="./bitcoin.svg" draggable="false" alt="Bitcoin" class="main-img" />
-      </div>  
-    </section>
+      <a href="#about"><i class='fas fa-angle-down fadeIn'></i></a>
+    </div>
+  </section>
 
-    
-
-
+  <section id="about" style="margin-bottom: 50vh">
     <div class="container">
-      <div class="center-helper">
-        <h1>
-          Recent Articles -
-        </h1>
+      <div class="row">
+        <div class="text">
+          <h1>EDUCATE</h1>
+          <p>
+            Navigating the new blockchain space is scary for new students, and we are here to help. 
+          </p>
+          <p>
+            With a variety of workshops covering both technical and non-technical concepts, we will provide an insightful acumen that will gear you for the technology of tomorrow. 
+          </p>
+          <p>
+            We believe everyone should have fundamental knowledge on a technology as disruptive as the internet. 
+          </p>
+        </div>
+        <div class="image">
+          <img src="./conference.svg" draggable="false" alt="Bitcoin" class="main-img" />
+        </div>
       </div>
-      <div id="blog-posts" class="row">
+      <div class="row">
+        <div class="text">
+          <h1>
+            CONNECT
+          </h1>
+          <p>
+            We host panels, lectures & workshops, connecting Australia's most aspiring blockchain talent with industry leaders, experts and other supporters. 
+          </p>
+        </div>
+        <div class="image">
+          <img src="./conversation.svg" draggable="false" alt="Bitcoin" class="main-img" />
+        </div>
       </div>
-    </div>  
-    
-    <template>
-      <div class="col-md-4" >
-        <div class="card">
-            <!--Post Image-->
-          <img  class="card-img-top" alt="">
-          <div class="card-body">
-            <h5 class="card-title"><!--Post Title--></h5>
-            <p class="card-text"><!--Post Description--></p>
-              <!--Post Link-->
-            <a href="" class="btn btn-primary" target="_blank">Read more</a>
+      <div class="row">
+        <div class="text">
+          <h1>
+            UPSKILL
+          </h1>
+          <p>
+            We believe blockchain technology takes not only coders, but lawyers, economists, entrepreneurs, and anyone with a passion for disruptive tech.  We will cover a variety of topics, from NFTs, to Defi protocols & scalability solutions like Layer 2s.
+          </p>
+        </div>
+        <div class="image">
+          <img src="./programming.svg" draggable="false" alt="Bitcoin" class="main-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="container" id="articles">
+    <div class="center-helper">
+      <h1>
+        Recent Articles -
+      </h1>
+    </div>
+    <div id="blog-posts" class="row">
+    </div>
+  </div>
+
+  <template>
+    <div class="col-lg-4">
+      <div class="card">
+        <!--Post Image-->
+        <img class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">
+            <!--Post Title-->
+          </h5>
+          <p class="card-text">
+            <!--Post Description-->
+          </p>
+          <!--Post Link-->
+          <a href="" class="btn btn-primary" target="_blank">Read more</a>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <div style="text-align: center; width: 100vw;">
+    <h1
+      style="color: #293241; text-decoration: bold; margin: 0; padding: 15px 0; background-color: white; width: 100vw;">
+      How can I get involved? </h1>
+    <div class="card-group get-involved">
+      <div class="card" style="background-color: #3d5a80">
+        <img class="card-img-top" src="agreement.png" alt="Card image cap" style="transform: translateX(15%);">
+        <div class="card-body">
+          <h2>Let's make it official.</h2>
+          <div class="links-container">
+            <a>Join us on SpArc</a>
           </div>
         </div>
       </div>
-    </template>
-
-	<section style="background: #1c258f; height: 70vh; text-align: center;">
-		<h1 style="background-image: linear-gradient(30deg, #ffffff, #2fb2d6);  -webkit-background-clip: text;
-  background-clip: text;"> How can I get involved? </h1>
-		<div class="card-deck get-involved">
-			<div class="card">
-				<img class="card-img-top" src="agreement.png" alt="Card image cap" style="transform: translateX(2.5em);">
-				<div class="card-body">
-					<h4>Let's make it official.</h4><br>
-					<a>Registration Form</a>
-					<a>Join us on SpArc</a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="social-media.png" alt="Card image cap">
-				<div class="card-body">
-					<h4>Follow our Socials.</h4>
-					<div class="side-block" >
-						<a href="" target="_blank" class="social-icon"><img
-								src="https://img.icons8.com/office/96/000000/facebook.png" /></a>
-						<a href="" target="_blank" class="social-icon"><img
-								src="https://img.icons8.com/color/96/000000/discord-logo.png" /></a>
-						<a href="" target="_blank" class="social-icon"><img
-								src="https://img.icons8.com/color/96/000000/youtube-play.png" /></a>
-					</div>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top" src="email.png" alt="Card image cap">
-				<div class="card-body">
-					<h4>Subscribe to our Newsletter.</h4>
-					<div class="input-container">
-						<input type="email" placeholder="Email" id="email-input">
-						<!-- <span class="floating-label">Email</span> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-    <!-- <section class="card-deck" style="background: #1c258f; height: 60vh; margin-bottom: 0">
+      <div class="card" style="background-color: #98c1d9">
+        <img class="card-img-top" src="social-media.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Follow our Socials.</h2>
+          <div class="social-icons-container">
+            <a href="" target="_blank" class="social-icon"><img
+                src="https://img.icons8.com/office/96/000000/facebook.png" /></a>
+            <a href="" target="_blank" class="social-icon"><img
+                src="https://img.icons8.com/color/96/000000/discord-logo.png" /></a>
+            <a href="" target="_blank" class="social-icon"><img
+                src="https://img.icons8.com/color/96/000000/youtube-play.png" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="background-color:  #ee6c4d ">
+        <img class="card-img-top" src="email.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Subscribe to our Newsletter.</h2>
+          <div class="email-input-field">
+            <input type="text" id="email-input" required>
+            <label for="email">Email:</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="card-deck" style="background: #1c258f; height: 60vh; margin-bottom: 0">
 		<div class="card">
 			<img class="card-img-top" src="agreement.png" />
 		</div>
 	</section> -->
-    
-    <!-- <section style="background: #1c258f; height: 60vh; margin-bottom: 0">
+
+  <!-- <section style="background: #1c258f; height: 60vh; margin-bottom: 0">
       <div class="center-helper" id="get-involved">
         <h1> How can I get involved? </h1>
       </div>
@@ -170,20 +243,18 @@
       </div>
     </section> -->
 
-    <section class="footer">
+  <!-- <section class="footer">
       <div class="footer-image">
         <a href="index.html"> <img class="logo" src="./ucbs_logo.png"/></a> 
       </div>
-    </section>
-    <script type="module" src="/main.js"></script>
-  </body>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
+    </section> -->
+  <script type="module" src="/main.js"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>
