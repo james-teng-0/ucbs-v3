@@ -524,7 +524,6 @@ section {
   background: #232946 ;
   height: 100vh;
   box-sizing: border-box;
-
   position: relative;
 }
 
@@ -620,6 +619,7 @@ section {
 
 .intro button:hover {
   background-color: #b9c4fc;
+  border: none;
   transition-duration: 0.35s;
   transition-timing-function: ease-in;
   border: none;
@@ -897,6 +897,17 @@ input:invalid {
   height: 2vh;
 }
 
+.logo-link > .logo {
+  width: 400px;
+}
+
+#main-img {
+  height: 100%;
+  width: 50%;
+  background-image: url('./bitcoin.svg');
+  background-size: cover;
+}
+
 /* Media Queries */
 @media (min-width: 1200px) {
   .container {
@@ -918,4 +929,55 @@ input:invalid {
     grid-template-columns: 600px;
     max-width: 600px;
   }
+
+  .page1-content {
+    padding-top: 20%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url();
+  }
+
+  .page1-content button {
+    z-index: 99;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page1-content > img {
+    display: none !important;
+  }
+
+  section {
+    height: 600px;
+  }
+
+  .logo-link .logo {
+    width: 300px;
+  }
+
+  #main-img {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 500px;
+    transform: translateX(-50%) rotate(90deg);
+    opacity: 0.5;
+
+  } 
+
+
+}
+
+@media screen and (min-width: 990px) {   
+  #main-img{
+    background-image: url('./bitcoin.svg');
+    background-size: cover;
+  } 
 }
