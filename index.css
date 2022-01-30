@@ -541,6 +541,7 @@ section {
   top: 90%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 99;
 }
 
 .fa.fa-caret-down {
@@ -616,20 +617,10 @@ section {
   transition: all 0.35s;
 } */
 
-<<<<<<< HEAD
 .intro button:hover {
   background-color: #b9c4fc;
+  color: black;
   border: none;
-=======
-.intro-left-button:hover {
-  background-color: #4e5b9e;
-  transition-duration: 0.35s;
-  transition-timing-function: ease-in;
-}
-
-.intro-right-button:hover {
-  background-color: #4e5b9e;
->>>>>>> e02bed14745fcb2f4bb72da7125939d3551ed8de
   transition-duration: 0.35s;
   transition-timing-function: ease-in;
 }
@@ -965,7 +956,7 @@ input:invalid {
   }
 
   section {
-    height: 600px;
+    height: 700px;
   }
 
   .logo-link .logo {
@@ -979,10 +970,7 @@ input:invalid {
     height: 500px;
     transform: translateX(-50%) rotate(90deg);
     opacity: 0.5;
-
   } 
-
-
 }
 
 @media screen and (min-width: 990px) {   
