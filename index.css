@@ -32,7 +32,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-/*  NAVIGATION BAR */
+/******************NAVIGATION BAR*******************/
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -516,10 +516,9 @@ a, a:hover {
     padding-bottom: 30px !important;
   }
 }
-/********END OF NAVBAR STYLING*********/
+/*******************************END OF NAVBAR STYLING*******************/
 
-
-
+/*******************************FIRST PAGE STYLING*******************/
 section {
   background: #232946 ;
   height: 100vh;
@@ -536,7 +535,7 @@ section {
 
 .fas.fa-angle-down {
   font-size: 2.5em;
-  color: #342ccc;
+  color: #5262b3;
 
   position: absolute;
   top: 90%;
@@ -597,7 +596,7 @@ section {
 .intro .intro-right-button {
   border: none;
   background-color: #ffe162;
-  color: black;
+  color: #232946;
 }
 
 .intro button span {
@@ -617,13 +616,22 @@ section {
   transition: all 0.35s;
 } */
 
+<<<<<<< HEAD
 .intro button:hover {
   background-color: #b9c4fc;
   border: none;
+=======
+.intro-left-button:hover {
+  background-color: #4e5b9e;
   transition-duration: 0.35s;
   transition-timing-function: ease-in;
-  border: none;
-  color: black;
+}
+
+.intro-right-button:hover {
+  background-color: #4e5b9e;
+>>>>>>> e02bed14745fcb2f4bb72da7125939d3551ed8de
+  transition-duration: 0.35s;
+  transition-timing-function: ease-in;
 }
 
 .main-img {
@@ -674,6 +682,7 @@ section {
 .center-helper {
   display: flex;
   justify-content: center;
+  margin-top: 5vh;
   margin-bottom: 5vh;
 }
 
@@ -728,13 +737,9 @@ section {
   border-color: #ffb703;
 } */
 
-.card-columns {
-  text-align: center;
-}
+/*******************************GET INVOLVED SECTION STYLING*******************/
 
-.card-deck.get-involved {
-  margin: 0;
-  width: 100vw;
+.card-columns {
   text-align: center;
 }
 
@@ -801,7 +806,7 @@ section {
 }
 
 .social-icon > img:hover {
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.3s ease-in-out;
 }
 
@@ -854,22 +859,31 @@ input:invalid {
 }
 
 /*********STYLING FOR INFO SECTION********/
-
-.container {
-  width: 100%;
-}
-
 .info-row {
   display: flex;
+  justify-content:center;
+  background: white;
+  border-bottom-style: solid;
+  border-color: #e5e7eb;
+  border-width: 1px;
 }
 
-.info-row > div {
+#grey {
+  background: #f7f9fb;
+}
+
+.info-wrapper > div {
   padding: 100px;
+}
+
+.info-wrapper {
+  display: flex;
+  width:50%
 }
 
 .text {
   width: 50%;
-  color: white;
+  color: black;
 }
 
 .text p {
@@ -884,7 +898,7 @@ input:invalid {
   width: 100%;
 }
 
-.container .info-row:nth-child(2n + 1) {
+.info-wrapper:nth-child(2n + 1) {
   flex-direction: row-reverse;
 }
 
@@ -909,11 +923,7 @@ input:invalid {
 }
 
 /* Media Queries */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1300px;
-  }
-}
+
 
 @media (max-width: 990px) {
   .card-group {
@@ -921,7 +931,7 @@ input:invalid {
     left: 50%;
     transform: translateX(-50%);
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
   }
 
   .card-deck.article {
@@ -981,3 +991,4 @@ input:invalid {
     background-size: cover;
   } 
 }
+
