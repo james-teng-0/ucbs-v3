@@ -27,7 +27,7 @@
 }
 
 html, body {
-  background-color: #0d0d2b;
+  background-color: #232946;
   font-size: 1vw;
   scroll-behavior: smooth;
 }
@@ -516,12 +516,12 @@ a, a:hover {
     padding-bottom: 30px !important;
   }
 }
-
+/********END OF NAVBAR STYLING*********/
 
 
 
 section {
-  background: #0d0d2b;
+  background: #232946 ;
   height: 100vh;
   box-sizing: border-box;
 
@@ -567,7 +567,7 @@ section {
 .intro p {
   padding-top: 1em;
   font-size: 1.5rem;
-  color: #7c81cc;
+  color: #b8c1ec;
 }
 
 .intro .btn-container {
@@ -679,10 +679,7 @@ section {
 
 .center-helper h1 {
   font-size: 2.5rem;
-  background-image: linear-gradient(30deg, #ffffff, #2fb2d6);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: white;
 }
 
 /* .card {
