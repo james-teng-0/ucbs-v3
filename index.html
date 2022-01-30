@@ -12,9 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@tryghost/content-api@1.2.6/umd/content-api.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Hamburger Icon -->
+  <link rel="stylesheet" href=" fonts/icomoon/style.css">
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <title>UNSW Cryptocurrency & Blockchain Society</title>
   <!-- <script>
       const handleEmailInput = (event) => {
@@ -40,19 +44,53 @@
 </head>
 
 <body>
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
   <section>
-    <header>
-      <a class="logo-link" href="index.html"> <img class="logo" src="./ucbs_logo.png" /></a>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="./team/team.html">Our Team</a></li>
-          <li><a href="./events/events.html">Events</a></li>
-          <li><a href="./sponsors/sponsors.html">Sponsors</a></li>
-          <li><a href="https://unswcbs.com/blog/">Publications</a></li>
-          <li><a class="nav-button" href="mailto:inquiries@unswcbs.com">Contact Us</a></li>
-          <li><a class="nav-button">Join Us</a></li>
-        </ul>
-      </nav>
+
+
+    <header class="site-navbar site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center position-relative">
+
+          <div class="col-3">
+            <div class="site-logo">
+              <a class="logo-link" href="index.html"> <img class="logo" src="./ucbs_logo.png" style="width:300px" /></a>
+            </div>
+          </div>
+
+          <div class="col-9  text-right">
+
+
+            <span class="d-inline-block d-lg-none"><a href="#"
+                class="text-primary site-menu-toggle js-menu-toggle py-5"><span
+                  class="icon-menu h3 text-white"></span></a></span>
+
+
+            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                <li class="active"><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Portfolio</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">Blog</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+      </div>
+
     </header>
 
     <div class="page1-content">
@@ -73,49 +111,53 @@
           <span class="scroll-label">SCROLL FOR MORE</span>
           <div class="scroll-indicator"></div>
         </a> -->
-      <a href="#about"><i class='fas fa-angle-down fadeIn'></i></a>
+      <a href="#about"><i class="fas fa-angle-down fadeIn"></i></a>
     </div>
   </section>
 
   <section id="about" style="margin-bottom: 50vh">
     <div class="container">
-      <div class="row">
+      <div class="row info-row">
         <div class="text">
           <h1>EDUCATE</h1>
           <p>
-            Navigating the new blockchain space is scary for new students, and we are here to help. 
+            Navigating the new blockchain space is scary for new students, and we are here to help.
           </p>
           <p>
-            With a variety of workshops covering both technical and non-technical concepts, we will provide an insightful acumen that will gear you for the technology of tomorrow. 
+            With a variety of workshops covering both technical and non-technical concepts, we will provide an
+            insightful acumen that will gear you for the technology of tomorrow.
           </p>
           <p>
-            We believe everyone should have fundamental knowledge on a technology as disruptive as the internet. 
+            We believe everyone should have fundamental knowledge on a technology as disruptive as the internet.
           </p>
         </div>
         <div class="image">
           <img src="./conference.svg" draggable="false" alt="Bitcoin" class="main-img" />
         </div>
       </div>
-      <div class="row">
+      <div class="row info-row">
         <div class="text">
           <h1>
             CONNECT
           </h1>
           <p>
-            We host panels, lectures & workshops, connecting Australia's most aspiring blockchain talent with industry leaders, experts and other supporters. 
+            We host panels, lectures & workshops, connecting Australia's most aspiring blockchain talent with industry
+            leaders, experts and other supporters.
           </p>
         </div>
         <div class="image">
           <img src="./conversation.svg" draggable="false" alt="Bitcoin" class="main-img" />
         </div>
       </div>
-      <div class="row">
+      <div class="row info-row">
         <div class="text">
           <h1>
             UPSKILL
           </h1>
           <p>
-            We believe blockchain technology takes not only coders, but lawyers, economists, entrepreneurs, and anyone with a passion for disruptive tech.  We will cover a variety of topics, from NFTs, to Defi protocols & scalability solutions like Layer 2s.
+            We believe blockchain technology takes not only coders, but lawyers, economists, entrepreneurs, and anyone
+            with a passion for disruptive tech. We will cover a variety of topics, from NFTs, to Defi protocols &
+            scalability solutions like Layer 2s.
           </p>
         </div>
         <div class="image">
@@ -248,13 +290,15 @@
         <a href="index.html"> <img class="logo" src="./ucbs_logo.png"/></a> 
       </div>
     </section> -->
-  <script type="module" src="/main.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
+  integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="module" src="/main.js"></script>
 
 </html>
