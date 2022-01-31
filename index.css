@@ -988,8 +988,10 @@ input:invalid {
   }
 
   .page1-content {
-    border: 1px solid red;
     overflow: hidden;
+  }
+
+  .page1-content .intro {
     margin-top: 20px;
   }
   
