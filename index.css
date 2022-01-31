@@ -742,6 +742,8 @@ section {
   height: 420px;
   color: white;
   text-align: center;
+  border: 1px solid aqua;
+
 }
 
 .get-involved .card-body > h2 {
@@ -940,6 +942,7 @@ input:invalid {
     border-bottom-style: solid;
     border-color: #e5e7eb;
     border-width: 1px;  
+    width: 100%;
   }
 
   .card-group {
@@ -948,6 +951,7 @@ input:invalid {
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: 100%;
+    width: 100%;
   }
 
   .card-deck.article {
@@ -1005,6 +1009,7 @@ input:invalid {
 
   .logo-link .logo {
     width: 300px;
+    max-width: 50vw;
   }
 
   #main-img {
@@ -1022,12 +1027,19 @@ input:invalid {
 }
 
 @media screen and (max-width: 500px) {
-  white-space: normal;
+  :root, html, body {
+    white-space: nowrap;
+    font-size: 5.5px;
+  }
+
+  .intro {
+    white-space: normal;
+  }
 }
 
-@media screen and (max-width: 375) {
+/* @media screen and (max-width: 375) {
   :root, html, body {
     white-space: nowrap;
     font-size: 5px;
   }
-}
+} */
