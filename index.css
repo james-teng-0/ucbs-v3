@@ -739,6 +739,7 @@ section {
   height: 420px;
   color: white;
   text-align: center;
+
 }
 
 .get-involved .card-body > h2 {
@@ -911,6 +912,7 @@ input:invalid {
   background-image: url('./bitcoin.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  opacity: 0.4; 
 }
 
 /* Media Queries */
@@ -934,9 +936,16 @@ input:invalid {
   }
   
   .card {
+    white-space: normal;
     border-bottom-style: solid;
     border-color: #e5e7eb;
     border-width: 1px;  
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card > * {
+    margin-top: 15px;
   }
 
   .card-group {
@@ -945,6 +954,7 @@ input:invalid {
     transform: translateX(-50%);
     display: grid;
     grid-template-columns: 100%;
+    width: 100%;
   }
 
   .card-deck.article {
@@ -961,7 +971,7 @@ input:invalid {
   }
 
   section {
-    height: 700px;
+    height: 100vh;
   }
 
   .page1-content {
@@ -1002,29 +1012,51 @@ input:invalid {
 
   .logo-link .logo {
     width: 300px;
+    max-width: 50vw;
   }
 
   #main-img {
+    border: 1px solid red;
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.5; 
+    opacity: 0.6; 
     background-image: url('./bitcoin-portrait.svg');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 50% 20%;
+    background-position: 50% 100%;
     width: 100%;
-    height: 70%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  white-space: normal;
+  :root, html, body {
+    white-space: normal;
+    font-size: 7px;
+  }
+
+  .page1-content {
+    padding-top: 30%;
+  }
+
+  .intro {
+    white-space: normal;
+  }
+
+  .intro > * {
+    width: 90vw;
+  }
+
+  .intro .btn-container {
+    width: 100%;
+  }
+  #main-img {
+  }
 }
 
-@media screen and (max-width: 375) {
+/* @media screen and (max-width: 375) {
   :root, html, body {
     white-space: nowrap;
     font-size: 5px;
   }
-}
+} */
