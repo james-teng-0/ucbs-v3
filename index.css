@@ -1024,3 +1024,10 @@ input:invalid {
 @media screen and (max-width: 500px) {
   white-space: normal;
 }
+
+@media screen and (max-width: 375) {
+  :root, html, body {
+    white-space: nowrap;
+    font-size: 5px;
+  }
+}
