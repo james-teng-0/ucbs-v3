@@ -730,6 +730,9 @@ section {
 } */
 
 /*******************************GET INVOLVED SECTION STYLING*******************/
+.card {
+  border: 0;
+}
 
 .card-columns {
   text-align: center;
@@ -918,6 +921,12 @@ input:invalid {
 
 
 @media (max-width: 990px) {
+  .card {
+    border-bottom-style: solid;
+    border-color: #e5e7eb;
+    border-width: 1px;  
+  }
+
   .card-group {
     position: absolute;
     left: 50%;
