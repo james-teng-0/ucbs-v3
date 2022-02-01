@@ -23,12 +23,13 @@
 }
 
 :root {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-html, body {
+html,
+body {
   background-color: #232946;
-  font-size: 25px;
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 
@@ -39,7 +40,8 @@ a {
   transition: 0.3s all ease;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none !important;
 }
 
@@ -51,7 +53,7 @@ a, a:hover {
   width: 100%;
   padding: 1rem;
   position: absolute;
-  background: #232946ad; 
+  background: #232946ad;
 }
 
 @media (max-width: 991.98px) {
@@ -511,11 +513,20 @@ a, a:hover {
     padding-bottom: 30px !important;
   }
 }
+
+.logo-link {
+  margin-right: auto;
+}
+
+.logo-link > .logo {
+  width: 400px;
+}
+
 /*******************************END OF NAVBAR STYLING*******************/
 
 /*******************************FIRST PAGE STYLING*******************/
 section {
-  background: #232946 ;
+  background: #232946;
   height: 100vh;
   box-sizing: border-box;
   position: relative;
@@ -528,7 +539,7 @@ section {
   align-items: center;
 }
 
-  .fas.fa-angle-down {
+.fas.fa-angle-down {
   font-size: 50px;
   color: #5262b3;
 
@@ -541,10 +552,6 @@ section {
 
 .fa.fa-caret-down {
   margin-left: 0.5em;
-}
-
-.logo-link {
-  margin-right: auto;
 }
 
 .intro {
@@ -733,7 +740,6 @@ section {
   height: 420px;
   color: white;
   text-align: center;
-
 }
 
 .get-involved .card-body > h2 {
@@ -846,7 +852,7 @@ input:invalid {
 /*********STYLING FOR INFO SECTION********/
 .info-row {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   background: white;
   border-bottom-style: solid;
   border-color: #e5e7eb;
@@ -863,7 +869,7 @@ input:invalid {
 
 .info-wrapper {
   display: flex;
-  width:50%
+  width: 50%;
 }
 
 .text {
@@ -896,46 +902,49 @@ input:invalid {
   height: 2vh;
 }
 
-.logo-link > .logo {
-  width: 400px;
-}
 /* ************************ */
 #main-img {
   height: 100%;
   width: 50%;
-  background-image: url('./bitcoin.svg');
+  background-image: url("./bitcoin.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.4; 
+  opacity: 0.4;
 }
 
 /*********************Media Queries*******************/
 
 @media screen and (max-width: 1250px) {
-  :root, html, body {
+  :root,
+  html,
+  body {
     font-size: 11px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  :root, html, body {
+  :root,
+  html,
+  body {
     font-size: 9px;
   }
 }
 
-
 @media (max-width: 990px) {
-  :root, html, body {
+  :root,
+  html,
+  body {
     font-size: 9px;
   }
-  
+
   .card {
     white-space: normal;
     border-bottom-style: solid;
-    border-color: #e5e7eb;
-    border-width: 1px;  
+    border-color: #141727;
+    border-width: 1px;
     width: 100%;
     padding: 20px;
+    padding-bottom: 200px;
   }
 
   .card > * {
@@ -959,7 +968,9 @@ input:invalid {
 }
 
 @media screen and (max-width: 875px) {
-  :root, html, body {
+  :root,
+  html,
+  body {
     white-space: nowrap;
     font-size: 8px;
   }
@@ -975,7 +986,6 @@ input:invalid {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url();
   }
 
   .page1-content button {
@@ -995,11 +1005,11 @@ input:invalid {
   .page1-content .intro {
     margin-top: 20px;
   }
-  
+
   .page1-content > img {
     display: none !important;
   }
-  
+
   .page1-content .fas.fa-angle-down {
     font-size: 40px;
   }
@@ -1010,12 +1020,11 @@ input:invalid {
   }
 
   #main-img {
-    border: 1px solid red;
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.6; 
-    background-image: url('./bitcoin-portrait.svg');
+    opacity: 0.6;
+    background-image: url("./bitcoin-portrait.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 100%;
@@ -1024,7 +1033,9 @@ input:invalid {
 }
 
 @media screen and (max-width: 500px) {
-  :root, html, body {
+  :root,
+  html,
+  body {
     white-space: normal;
     font-size: 7px;
   }
