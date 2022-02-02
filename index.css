@@ -407,21 +407,12 @@ a:hover {
 .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
   background: #f8f9fa;
 }
-.site-mobile-menu .site-nav-wrap .arrow-collapse:before {
-  font-size: 12px;
-  z-index: 20;
-  font-family: "icomoon";
-  content: "\f078";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(-180deg);
-  -ms-transform: translate(-50%, -50%) rotate(-180deg);
-  transform: translate(-50%, -50%) rotate(-180deg);
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+
+.fal.fa-bars {
+  color: white;
+  font-size: 30px;
 }
+
 .site-mobile-menu .site-nav-wrap .arrow-collapse.collapsed:before {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -539,12 +530,12 @@ section {
   align-items: center;
 }
 
-.fas.fa-angle-down {
+.fal.fa-angle-double-down {
   font-size: 50px;
   color: #5262b3;
 
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
@@ -906,10 +897,10 @@ input:invalid {
 #main-img {
   height: 100%;
   width: 50%;
-  background-image: url("./bitcoin.svg");
+  /* background-image: url("./bitcoin.svg?url"); */
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.4;   
 }
 
 /*********************Media Queries*******************/
@@ -1024,7 +1015,7 @@ input:invalid {
     bottom: 0;
     left: 0;
     opacity: 0.6;
-    background-image: url("./bitcoin-portrait.svg");
+    /* background-image: url("./bitcoin-portrait.svg"); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 100%;

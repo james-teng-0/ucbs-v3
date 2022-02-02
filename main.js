@@ -36,3 +36,102 @@ api.posts
       cardContainer.appendChild(card); // append the template's copy to the page
     });
   });
+
+
+
+var Scrambler = function (el) {
+  'use strict';
+  var m = this;
+  m.init = function () {
+    m.codeletters = "電車のふるさと生きがい駅はど森林浴こ懐かしいです甘美か";
+    // ₿Ξ⟠✕ÐŁӾꜩξ◈₮₳
+    m.message = 0;
+    m.current_length = 0;
+    m.fadeBuffer = false;
+    m.messages = [
+      el.innerText
+    ];
+
+    setTimeout(m.animateIn, 100);
+  };
+
+  m.generateRandomString = function (length) {
+    var random_text = '';
+    while (random_text.length < length) {
+      random_text += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+    }
+
+    return random_text;
+  };
+
+  m.animateIn = function () {
+    if (m.current_length < m.messages[m.message].length) {
+      m.current_length = m.current_length + 2;
+      if (m.current_length > m.messages[m.message].length) {
+        m.current_length = m.messages[m.message].length;
+      }
+
+      var message = m.generateRandomString(m.current_length);
+      $(el).html(message);
+
+      setTimeout(m.animateIn, 10);
+    } else {
+      setTimeout(m.animateFadeBuffer, 10);
+    }
+  };
+
+  m.animateFadeBuffer = function () {
+    if (m.fadeBuffer === false) {
+      m.fadeBuffer = [];
+      for (var i = 0; i < m.messages[m.message].length; i++) {
+        m.fadeBuffer.push({ c: (Math.floor(Math.random() * 12)) + 1, l: m.messages[m.message].charAt(i) });
+      }
+    }
+
+    var do_cycles = false;
+    var message = '';
+
+    for (var i = 0; i < m.fadeBuffer.length; i++) {
+      var fader = m.fadeBuffer[i];
+      if (fader.c > 0) {
+        do_cycles = true;
+        fader.c--;
+        message += m.codeletters.charAt(Math.floor(Math.random() * m.codeletters.length));
+      } else {
+        message += fader.l;
+      }
+    }
+
+    $(el).html(message);
+
+    if (do_cycles === true) {
+      setTimeout(m.animateFadeBuffer, 50);
+    } else {
+      setTimeout(m.cycleText, 2000);
+    }
+  };
+
+  m.init();
+}
+
+function isInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+const scrambledMsg = document.querySelectorAll(".scramble");
+let alreadyScrambled = [];
+document.addEventListener('scroll', function () {
+  scrambledMsg.forEach((element) => {
+    if (isInViewport(element) && !alreadyScrambled.includes(element)) {
+      new Scrambler(element);
+      alreadyScrambled.push(element);
+    }
+  })
+})
+
+
