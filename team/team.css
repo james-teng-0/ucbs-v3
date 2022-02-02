@@ -701,20 +701,10 @@ figure img {
 }
 
 .carousel-indicators {
-  bottom: -150px !important;
+  bottom: -100px !important;
 }
 
-.carousel-caption {
-  bottom: -200px !important;
-}
-
-.carousel-caption h1 {
-  color: black;
-  position: relative;
-  bottom: -50px !important;
-}
-
-.carousel-header {
+    .carousel-header {
   color: #fff;
   text-align: center;
   padding: 1em 0;
