@@ -41,6 +41,13 @@
           console.log(classes);
         }
     </script> -->
+  <style>
+    @media screen and (max-width: 875px) {
+      #main-img {
+        background-image: url('./bitcoin-portrait.svg') !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -96,17 +103,14 @@
       </div>
       <div id="main-img" 
       style="
-        background-image: url('./bitcoin.svg');   
-        @media screen and (max-width: 875px) {
-          background-image: url('./bitcoin-portrait.svg');
-        }">
+        background-image: url('./bitcoin.svg');">
       </div>
       <!-- <img src="./bitcoin.svg" draggable="false" alt="Bitcoin" class="main-img" /> -->
       <!-- <a draggable="false" class="scroll-container">
           <span class="scroll-label">SCROLL FOR MORE</span>
           <div class="scroll-indicator"></div>
         </a> -->
-      <a href="#about"><i class="fal fa-angle-double-down fadeIn"></i></a>
+      <a href="#about"><i class="fal fa-angle-double-down fadeIn"></i></a>  
     </div>
   </section>
 
