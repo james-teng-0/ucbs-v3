@@ -950,6 +950,7 @@ body {
 
 /******************FOOTER STYLING***************/
 footer {
+  margin-top: 10vh;
   position: relative;
   background: #343c66;
   width: 100%;
