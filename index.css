@@ -731,6 +731,7 @@ section {
   height: 420px;
   color: white;
   text-align: center;
+  padding: 5% 0 7% 0;
 }
 
 .get-involved .card-body > h2 {
@@ -741,7 +742,7 @@ section {
   width: 50%;
   max-width: 200px;
   height: auto;
-  margin: 6% auto 0 auto;
+  margin: 0 auto;
 }
 
 .card-body .links-container {
@@ -950,12 +951,18 @@ body {
 
 /******************FOOTER STYLING***************/
 footer {
+  width: 100%;
+  background: #343c66;
+}
+/* footer {
   margin-top: 10vh;
   position: relative;
   background: #343c66;
   width: 100%;
+  height: 200px;
   bottom: 0;
   left: 0;
+  border: 1px solid aqua;
 }
 footer::before {
   content: "";
@@ -965,7 +972,7 @@ footer::before {
   height: 1px;
   width: 100%;
   background: #afafb6;
-}
+} */
 footer .content {
   max-width: 1250px;
   margin: auto;
@@ -1221,7 +1228,7 @@ footer .bottom-details .bottom_text {
   }
 
   .card-group {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     display: grid;
