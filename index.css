@@ -523,10 +523,14 @@ section {
   position: relative;
 }
 
+.color2 {
+  color: #6e78ff;
+}
+
 .page1-content {
   position: relative;
   height: 100vh;
-  display: flex;
+  display: flex;    
   align-items: center;
 }
 
@@ -559,7 +563,7 @@ section {
 .intro p {
   padding-top: 1em;
   font-size: 1.5rem;
-  color: #b8c1ec;
+  color: rgb(240, 240, 240);
 }
 
 .intro .btn-container {
@@ -893,7 +897,7 @@ input:invalid {
   /* background-image: url("./bitcoin.svg?url"); */
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.95;
 }
 
 /**********************TEXT SCROLLING STYLING*****************/
@@ -1299,7 +1303,7 @@ footer .bottom-details .bottom_text {
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0.6;
+    opacity: 0.95;
     /* background-image: url("./bitcoin-portrait.svg"); */
     background-repeat: no-repeat;
     background-size: 100%;

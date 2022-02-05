@@ -44,6 +44,7 @@ var Scrambler = function (el) {
   var m = this;
   m.init = function () {
     m.codeletters = "電車のふるさと生きがい駅はど森林浴こ懐かしいです甘美か";
+    // i love anime
     // ₿Ξ⟠✕ÐŁӾꜩξ◈₮₳
     m.message = 0;
     m.current_length = 0;
