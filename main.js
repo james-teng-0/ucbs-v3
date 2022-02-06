@@ -12,7 +12,7 @@ import "./index.css";
 // document.addEventListener("scroll", scrollHandler);
 
 const api = new GhostContentAPI({
-  url: "https://www.unswcbs.com/blog",
+  url: "https://www.uncb.xyz/blog",
   key: "837c5e73ef5b72d3b5e9e23be8",
   version: "v2",
 });
