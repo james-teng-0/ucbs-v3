@@ -871,3 +871,12 @@ footer .bottom-details .bottom_text {
     width: 100%;
   }
 }
+
+
+/*MEDIA QUERIES */
+@media screen and (max-width: 875px) {
+  .logo-link .logo {
+    width: 300px;
+    max-width: 50vw;
+  }
+}
