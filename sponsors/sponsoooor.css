@@ -539,11 +539,11 @@ a:hover {
 
 .heading h1 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: 0.2rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: white;
 }
 
