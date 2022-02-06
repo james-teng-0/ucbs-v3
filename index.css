@@ -894,8 +894,9 @@ input:invalid {
   /* border: solid 3px; */
   /* width: 50%; */
   min-width: 50%;
-  /* max-width: 100%; */
+  max-width: 100%;
   color: black;
+  white-space: normal;
 }
 
 .text > h1 {
@@ -904,6 +905,7 @@ input:invalid {
 
 .text p {
   min-width: 20%;
+  max-width: 100%;
   font-size: 18px;
 }
 
@@ -1255,7 +1257,7 @@ footer .bottom-details .bottom_text {
     border-width: 1px;
     width: 100%;
     padding: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 40px;
   }
 
   .card > * {
