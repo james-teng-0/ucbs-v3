@@ -32,9 +32,10 @@ a:hover {
   position: relative !important;
   top: 0;
   width: 100%;
-  padding: 1rem;
   background: #232946ad;
 	opacity: 1;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 991.98px) {
@@ -490,9 +491,6 @@ a:hover {
   }
 }
 
-.logo-link {
-  margin-right: auto;
-}
 
 .logo-link > .logo {
   width: 400px;

@@ -1,807 +1,1292 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+		<link rel="icon" type="image/png" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css"
+			type="text/css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-	<link rel="icon" type="image/png" href="../favicon.png" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="./team.css" />
+		<title>UCBS - Team</title>
+	</head>
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-	<link rel="stylesheet" type="text/css" href="./team.css" />
-	<title>UCBS - Team</title>
-</head>
-
-<body>
-	<div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <span class="fad fa-times js-menu-toggle"></span>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div>
-	
-	<header class="site-navbar site-navbar-target" role="banner">
-		<div style="width: 100%; padding: 0 4em">
-			<div class="row align-items-center position-relative">
-				<div class="col-3">
-					<div class="site-logo">
-						<a class="logo-link" href="../index.html">
-							<img class="logo" src="../ucbs_logo.png" /></a>
-					</div>
-				</div>
-
-				<div class="col-9 text-right">
-					<span class="d-inline-block d-lg-none"><a href="#"
-							class="text-primary site-menu-toggle js-menu-toggle py-5"><span
-								class="fal fa-bars"></span></a></span>
-					<nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-						<ul class="site-menu main-menu js-clone-nav ml-auto">
-							<li>
-								<a href="../index.html" class="nav-link">Home</a>
-							</li>
-							<li class="active">
-								<a class="nav-link">Team</a>
-							</li>
-							<li>
-								<a href="../events/events.html" class="nav-link">Events</a>
-							</li>
-							<li>
-								<a href="../sponsors/sponsors.html" class="nav-link">Sponsors</a>
-							</li>
-							<li>
-								<a href="https://www.uncb.xyz/blog/" class="nav-link">Blog</a>
-							</li>
-						</ul>
-					</nav>
+	<body>
+		<div class="site-mobile-menu site-navbar-target">
+			<div class="site-mobile-menu-header">
+				<div class="site-mobile-menu-close mt-3">
+					<span class="fad fa-times js-menu-toggle"></span>
 				</div>
 			</div>
+			<div class="site-mobile-menu-body"></div>
 		</div>
-	</header>
 
-	<div class="banner-container text-center">
-		<img src="../team-bg.jpg" draggable="false" class="top-banner" />
-		<h1>Our Team</h1>
-	</div>
-
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-bottom: 10vh">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<!-- FIRST SLIDE -->
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
-							<h2>Meet our Executives</h2>
-						</div> -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Roger Chen</h6>
-								<span> Co-President </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" style="object-fit: cover; height: 262.5px;" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Kevin Mao</h6>
-								<span> Co-President </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../paj.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Paj Sae-Lim</h6>
-								<span> Co-President </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-					</div>
-				</div>
+		<header
+			class="site-navbar site-navbar-target"
+			role="banner"
+			style="
+				display: flex;
+				justify-content: space-between;
+				padding: 1rem 2rem;
+				align-items: center;
+			"
+		>
+			<div class="site-logo">
+				<a class="logo-link" href="../index.html">
+					<img class="logo" src="../ucbs_logo.png"
+				/></a>
 			</div>
-			<div class="carousel-item">
-				<!-- SECOND SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
-							<h2>Meet our Executives</h2>
-						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../eric.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Eric Ning</h6>
-								<span> Vice-President </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Avneet Singh</h6>
-								<span> Vice-President </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-					</div>
-				</div>
+			<div class="text-right">
+				<span class="d-inline-block d-lg-none"
+					><a
+						href="#"
+						class="text-primary site-menu-toggle js-menu-toggle py-5"
+						><span class="fal fa-bars"></span></a
+				></span>
+				<nav
+					class="site-navigation text-right ml-auto d-none d-lg-block"
+					role="navigation"
+				>
+					<ul class="site-menu main-menu js-clone-nav ml-auto">
+						<li>
+							<a href="../index.html" class="nav-link">Home</a>
+						</li>
+						<li class="active">
+							<a class="nav-link">Team</a>
+						</li>
+						<li>
+							<a href="../events/events.html" class="nav-link"
+								>Events</a
+							>
+						</li>
+						<li>
+							<a href="../sponsors/sponsors.html" class="nav-link"
+								>Sponsors</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.uncb.xyz/blog/"
+								class="nav-link"
+								>Blog</a
+							>
+						</li>
+					</ul>
+				</nav>
 			</div>
-			<div class="carousel-item">
-				<!-- THIRD SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
-							<h2>Meet our Executives</h2>
-						</div> -->
+		</header>
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Rachel Dai</h6>
-								<span> Treasurer </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../alice.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Alice Liao</h6>
-								<span> Treasurer </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<!-- FOURTH SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
-							<h2>Meet our Executives</h2>
-						</div> -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Eva Wu</h6>
-								<span> Secretary </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>Joan Yan</h6>
-								<span> Secretary </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../james.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<h6>James Teng</h6>
-								<span> Head of Technology </span>
-							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
-					</div>
-				</div>
-			</div>
+		<div class="banner-container text-center">
+			<img src="../team-bg.jpg" draggable="false" class="top-banner" />
+			<h1>Our Team</h1>
 		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
 
+		<div
+			id="carouselExampleIndicators"
+			class="carousel slide"
+			data-ride="carousel"
+			style="margin-bottom: 10vh"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="1"
+				></li>
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="2"
+				></li>
+				<li
+					data-target="#carouselExampleIndicators"
+					data-slide-to="3"
+				></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<!-- FIRST SLIDE -->
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
+							<h2>Meet our Executives</h2>
+						</div> -->
 
-	<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselIndicators" data-slide-to="1"></li>
-			<li data-target="#carouselIndicators" data-slide-to="2"></li>
-			<li data-target="#carouselIndicators" data-slide-to="3"></li>
-			<li data-target="#carouselIndicators" data-slide-to="4"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<!-- FIRST SLIDE -->
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Roger Chen</h6>
+									<span> Co-President </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img
+											src="../placeholder.png"
+											alt=""
+											style="
+												object-fit: cover;
+												height: 262.5px;
+											"
+										/>
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Kevin Mao</h6>
+									<span> Co-President </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../paj.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Paj Sae-Lim</h6>
+									<span> Co-President </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!-- SECOND SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
+							<h2>Meet our Executives</h2>
+						</div> -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../eric.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Eric Ning</h6>
+									<span> Vice-President </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Avneet Singh</h6>
+									<span> Vice-President </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!-- THIRD SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
+							<h2>Meet our Executives</h2>
+						</div> -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Rachel Dai</h6>
+									<span> Treasurer </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../alice.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Alice Liao</h6>
+									<span> Treasurer </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!-- FOURTH SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
+							<h2>Meet our Executives</h2>
+						</div> -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Eva Wu</h6>
+									<span> Secretary </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>Joan Yan</h6>
+									<span> Secretary </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../james.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<h6>James Teng</h6>
+									<span> Head of Technology </span>
+								</div>
+							</div>
+							<!-- TEAM MEMBER END -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span
+					class="carousel-control-prev-icon"
+					aria-hidden="true"
+				></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselExampleIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span
+					class="carousel-control-next-icon"
+					aria-hidden="true"
+				></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+
+		<div
+			id="carouselIndicators"
+			class="carousel slide"
+			data-ride="carousel"
+		>
+			<ol class="carousel-indicators">
+				<li
+					data-target="#carouselIndicators"
+					data-slide-to="0"
+					class="active"
+				></li>
+				<li data-target="#carouselIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselIndicators" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<!-- FIRST SLIDE -->
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
 							<h2>Socials</h2>
 						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../sanjith.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../sanjith.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
+
+									<h6>Sanjith De Silva</h6>
+									<span> Director </span>
 								</div>
-
-								<h6>Sanjith De Silva</h6>
-								<span> Director </span>
 							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
+							<!-- TEAM MEMBER END -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<h6>Eunice Chan</h6>
-								<span> Director </span>
+									<h6>Eunice Chan</h6>
+									<span> Director </span>
+								</div>
 							</div>
+							<!-- TEAM MEMBER END -->
 						</div>
-						<!-- TEAM MEMBER END -->
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item">
-				<!-- SECOND SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
+				<div class="carousel-item">
+					<!-- SECOND SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
 							<h2>Human Resources</h2>
 						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../kevin.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../kevin.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
+
+									<h6>Kevin Bao</h6>
+									<span> Director </span>
 								</div>
-
-								<h6>Kevin Bao</h6>
-								<span> Director </span>
 							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
+							<!-- TEAM MEMBER END -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../scott.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../scott.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<h6>Scott Connally</h6>
-								<span> Director </span>
+									<h6>Scott Connally</h6>
+									<span> Director </span>
+								</div>
 							</div>
+							<!-- TEAM MEMBER END -->
 						</div>
-						<!-- TEAM MEMBER END -->
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item">
-				<!-- THIRD SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
+				<div class="carousel-item">
+					<!-- THIRD SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
 							<h2>Careers</h2>
 						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
+
+									<h6>Nala Hong</h6>
+									<span>Director</span>
 								</div>
-
-								<h6>Nala Hong</h6>
-								<span>Director</span>
 							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
+							<!-- TEAM MEMBER END -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../placeholder.png" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../placeholder.png" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<h6>Catherine Xie</h6>
-								<span> Director </span>
+									<h6>Catherine Xie</h6>
+									<span> Director </span>
+								</div>
 							</div>
+							<!-- TEAM MEMBER END -->
 						</div>
-						<!-- TEAM MEMBER END -->
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item">
-				<!-- FOURTH SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
+				<div class="carousel-item">
+					<!-- FOURTH SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
 							<h2>Careers</h2>
 						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../kirat.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../kirat.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
+
+									<h6>Kirat Singh</h6>
+									<span> Director </span>
 								</div>
-
-								<h6>Kirat Singh</h6>
-								<span> Director </span>
 							</div>
-						</div>
-						<!-- TEAM MEMBER END -->
+							<!-- TEAM MEMBER END -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../yuvi.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../yuvi.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<h6>Yuvraj Singh</h6>
-								<span> Director </span>
+									<h6>Yuvraj Singh</h6>
+									<span> Director </span>
+								</div>
 							</div>
+							<!-- TEAM MEMBER END -->
 						</div>
-						<!-- TEAM MEMBER END -->
 					</div>
 				</div>
-			</div>
-			<div class="carousel-item">
-				<!-- FOURTH SLIDE -->
-				<div class="container our-team text-center" style="background-color: transparent;">
-					<div class="row">
-						<!-- <div class="col-sm-6 offset-sm-3 heading">
+				<div class="carousel-item">
+					<!-- FOURTH SLIDE -->
+					<div
+						class="container our-team text-center"
+						style="background-color: transparent"
+					>
+						<div class="row">
+							<!-- <div class="col-sm-6 offset-sm-3 heading">
 							<h2>Publications</h2>
 						</div> -->
 
-						<!-- TEAM MEMBER START -->
-						<div class="col-sm-6 col-md-4">
-							<div class="team-member">
-								<div class="team-img">
-									<img src="../alex.jpg" alt="" />
-									<div class="overlay">
-										<div class="team-details text-center">
-											<p>
-												Our web design team will
-												spend time with our digital
-												marketing team.
-											</p>
-											<div class="socials mt-20">
-												<a href="#"><i class="fa fa-facebook"></i></a>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-												<a href="#"><i class="fa fa-google-plus"></i></a>
-												<a href="#"><i class="fa fa-envelope"></i></a>
+							<!-- TEAM MEMBER START -->
+							<div class="col-sm-6 col-md-4">
+								<div class="team-member">
+									<div class="team-img">
+										<img src="../alex.jpg" alt="" />
+										<div class="overlay">
+											<div
+												class="team-details text-center"
+											>
+												<p>
+													Our web design team will
+													spend time with our digital
+													marketing team.
+												</p>
+												<div class="socials mt-20">
+													<a href="#"
+														><i
+															class="fa fa-facebook"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-twitter"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-google-plus"
+														></i
+													></a>
+													<a href="#"
+														><i
+															class="fa fa-envelope"
+														></i
+													></a>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
 
-								<h6>Alex Weng</h6>
-								<span> Director </span>
+									<h6>Alex Weng</h6>
+									<span> Director </span>
+								</div>
 							</div>
+							<!-- TEAM MEMBER END -->
 						</div>
-						<!-- TEAM MEMBER END -->
 					</div>
 				</div>
 			</div>
+			<a
+				class="carousel-control-prev"
+				href="#carouselIndicators"
+				role="button"
+				data-slide="prev"
+			>
+				<span
+					class="carousel-control-prev-icon"
+					aria-hidden="true"
+				></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a
+				class="carousel-control-next"
+				href="#carouselIndicators"
+				role="button"
+				data-slide="next"
+			>
+				<span
+					class="carousel-control-next-icon"
+					aria-hidden="true"
+				></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-		<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
-	<footer>
-		<div class="content">
-			<div class="top">
-				<div class="logo-details">
-					<a class="logo-link" href="../index.html">
-						<img class="logo" src="../ucbs_logo.png" /></a>
+		<footer>
+			<div class="content">
+				<div class="top">
+					<div class="logo-details">
+						<a class="logo-link" href="../index.html">
+							<img class="logo" src="../ucbs_logo.png"
+						/></a>
+					</div>
+					<div class="media-icons">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fab fa-youtube"></i></a>
+					</div>
 				</div>
-				<div class="media-icons">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-youtube"></i></a>
+				<div class="link-boxes">
+					<ul class="box">
+						<li class="link_name">Explore</li>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../team/team.html">Team</a></li>
+						<li><a href="../events/events.html">Events</a></li>
+						<li>
+							<a href="../sponsors/sponsors.html">Sponsors</a>
+						</li>
+						<li><a href="https://www.uncb.xyz/blog/">Blog</a></li>
+					</ul>
+					<ul class="box"></ul>
+					<ul class="box">
+						<li class="link_name">Visit</li>
+						<li>
+							<a
+								href="https://www.partnervisit.unsw.edu.au/our-campus"
+								>UNSW<br />Kensington, Sydney <br />NSW,
+								Australia 2052</a
+							>
+						</li>
+					</ul>
+					<ul class="box"></ul>
+					<ul class="box">
+						<li class="link_name">General Inquiries</li>
+						<li>
+							<a href="mailto:hello@uncb.xyz">hello@uncb.xyz</a>
+						</li>
+						<li style="visibility: hidden"><a href="#">l</a></li>
+						<li class="link_name">Work with us</li>
+						<li>
+							<a href="mailto:sponsorships@uncb.xyz"
+								>sponsorships@uncb.xyz</a
+							>
+						</li>
+					</ul>
+					<ul class="box"></ul>
+					<ul class="box input-box">
+						<li class="link_name">Subscribe</li>
+						<li>
+							<input type="text" placeholder="Enter your email" />
+						</li>
+						<li><input type="button" value="Subscribe" /></li>
+					</ul>
 				</div>
 			</div>
-			<div class="link-boxes">
-				<ul class="box">
-					<li class="link_name">Explore</li>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../team/team.html">Team</a></li>
-					<li><a href="../events/events.html">Events</a></li>
-					<li><a href="../sponsors/sponsors.html">Sponsors</a></li>
-					<li><a href="https://www.uncb.xyz/blog/">Blog</a></li>
-				</ul>
-				<ul class="box"></ul>
-				<ul class="box">
-					<li class="link_name">Visit</li>
-					<li>
-						<a href="https://www.partnervisit.unsw.edu.au/our-campus">UNSW<br />Kensington, Sydney
-							<br />NSW, Australia
-							2052</a>
-					</li>
-				</ul>
-				<ul class="box"></ul>
-				<ul class="box">
-					<li class="link_name">General Inquiries</li>
-					<li><a href="mailto:hello@uncb.xyz">hello@uncb.xyz</a></li>
-					<li style="visibility: hidden"><a href="#">l</a></li>
-					<li class="link_name">Work with us</li>
-					<li>
-						<a href="mailto:sponsorships@uncb.xyz">sponsorships@uncb.xyz</a>
-					</li>
-				</ul>
-				<ul class="box"></ul>
-				<ul class="box input-box">
-					<li class="link_name">Subscribe</li>
-					<li><input type="text" placeholder="Enter your email" /></li>
-					<li><input type="button" value="Subscribe" /></li>
-				</ul>
+			<div class="bottom-details">
+				<div class="bottom_text">
+					<span class="copyright_text"
+						>Copyright © 2022 <a href="#">UNCB.</a>All rights
+						reserved</span
+					>
+					<span class="policy_terms">
+						<a href="#">Privacy policy</a>
+						<a href="#">Terms & conditions</a>
+					</span>
+				</div>
 			</div>
-		</div>
-		<div class="bottom-details">
-			<div class="bottom_text">
-				<span class="copyright_text">Copyright © 2022 <a href="#">UNCB.</a>All rights reserved</span>
-				<span class="policy_terms">
-					<a href="#">Privacy policy</a>
-					<a href="#">Terms & conditions</a>
-				</span>
-			</div>
-		</div>
-	</footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
-	integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA=="
-	crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	crossorigin="anonymous"></script>
-<script type="module" src="../mobile.js"></script>
-
+		</footer>
+	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"
+		integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA=="
+		crossorigin="anonymous"
+		referrerpolicy="no-referrer"
+	></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"
+	></script>
+	<script type="module" src="../mobile.js"></script>
 </html>
