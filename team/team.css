@@ -526,12 +526,13 @@ a:hover {
 .our-team {
 	width: 100%;
 	padding: 30px 0 0 0;
+	color: white;
 }
 
 .team-member {
 	overflow: hidden;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 
 .team-img {
