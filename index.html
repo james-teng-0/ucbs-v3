@@ -53,10 +53,12 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-92V5D7JC7N"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'G-92V5D7JC7N');
+    gtag("config", "G-92V5D7JC7N");
   </script>
 </head>
 
@@ -86,8 +88,12 @@
                 class="text-primary site-menu-toggle js-menu-toggle py-5"><span class="fal fa-bars"></span></a></span>
             <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
               <ul class="site-menu main-menu js-clone-nav ml-auto">
-                <li class="active"><a href="#" class="nav-link">Home</a></li>
-                <li><a href="./team/team.html" class="nav-link">Team</a></li>
+                <li class="active">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li>
+                  <a href="./team/team.html" class="nav-link">Team</a>
+                </li>
                 <li>
                   <a href="./events/events.html" class="nav-link">Events</a>
                 </li>
@@ -116,8 +122,12 @@
           <span class="color2">peer to peer collaboration.</span>
         </p>
         <div class="btn-container">
-          <button class="intro-left-button"><span>Newsletter</span></button>
-          <button class="intro-right-button"><span>Events</span></button>
+          <button class="intro-left-button">
+            <span>Newsletter</span>
+          </button>
+          <button class="intro-right-button">
+            <span>Events</span>
+          </button>
         </div>
       </div>
       <div id="main-img" style="background-image: url('./bitcoin.svg')"></div>
@@ -132,55 +142,58 @@
 
   <div id="about" class="fluid-container" style="overflow: hidden">
     <div class="row info-row">
-      <div class="info-wrapper">
-        <div class="text">
+      <div class="info-wrapper row">
+        <div class="text col-xl">
           <h1 class="scramble">EDUCATE</h1>
           <p>
-            Navigating the new blockchain space is scary for new students, and
-            we are here to help.
+            Navigating the new blockchain space is scary for new
+            students, and we are here to help.
           </p>
           <p>
-            With a variety of workshops covering both technical and
-            non-technical concepts, we will provide an insightful acumen that
-            will gear you for the technology of tomorrow.
+            With a variety of workshops covering both technical
+            and non-technical concepts, we will provide an
+            insightful acumen that will gear you for the
+            technology of tomorrow.
           </p>
           <p>
-            We believe everyone should have fundamental knowledge on a
-            technology as disruptive as the internet.
+            We believe everyone should have fundamental
+            knowledge on a technology as disruptive as the
+            internet.
           </p>
         </div>
-        <div class="image">
+        <div class="image col-xl">
           <img src="./conference.svg" draggable="false" alt="Bitcoin" class="main-img" />
         </div>
       </div>
     </div>
     <div class="row info-row" id="grey">
-      <div class="info-wrapper">
-        <div class="image">
+      <div class="info-wrapper row">
+        <div class="image col-xl">
           <img src="./conversation.svg" draggable="false" alt="Bitcoin" class="main-img" />
         </div>
-        <div class="text">
+        <div class="text col-xl">
           <h1 class="scramble">CONNECT</h1>
           <p>
-            We host panels, lectures & workshops, connecting Australia's most
-            aspiring blockchain talent with industry leaders, experts and
-            other supporters.
+            We host panels, lectures & workshops, connecting
+            Australia's most aspiring blockchain talent with
+            industry leaders, experts and other supporters.
           </p>
         </div>
       </div>
     </div>
     <div class="row info-row">
-      <div class="info-wrapper">
-        <div class="text">
+      <div class="info-wrapper row">
+        <div class="text col-xl">
           <h1 class="scramble">INNOVATE</h1>
           <p>
-            We believe blockchain technology takes not only coders, but
-            lawyers, economists, entrepreneurs, and anyone with a passion for
-            disruptive tech. We will cover a variety of topics, from NFTs, to
-            Defi protocols & scalability solutions like Layer 2s.
+            We believe blockchain technology takes not only
+            coders, but lawyers, economists, entrepreneurs, and
+            anyone with a passion for disruptive tech. We will
+            cover a variety of topics, from NFTs, to Defi
+            protocols & scalability solutions like Layer 2s.
           </p>
         </div>
-        <div class="image">
+        <div class="image col-xl">
           <img src="./programming.svg" draggable="false" alt="Bitcoin" class="main-img" />
         </div>
       </div>
@@ -197,7 +210,7 @@
   <template>
     <div class="col-lg-4">
       <div class="bg-container">
-        <div class="card ">
+        <div class="card">
           <!--Post Image-->
           <img class="card-img-top" alt="" />
           <div class="card-body">
@@ -212,7 +225,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </template>
 
@@ -293,14 +305,16 @@
         <ul class="box">
           <li class="link_name">Visit</li>
           <li>
-            <a href="https://www.partnervisit.unsw.edu.au/our-campus">UNSW<br />Kensington, Sydney <br />NSW, Australia
-              2052</a>
+            <a href="https://www.partnervisit.unsw.edu.au/our-campus">UNSW<br />Kensington, Sydney <br />NSW,
+              Australia 2052</a>
           </li>
         </ul>
         <ul class="box"></ul>
         <ul class="box">
           <li class="link_name">General Inquiries</li>
-          <li><a href="mailto:hello@uncb.xyz">hello@uncb.xyz</a></li>
+          <li>
+            <a href="mailto:hello@uncb.xyz">hello@uncb.xyz</a>
+          </li>
           <li style="visibility: hidden"><a href="#">l</a></li>
           <li class="link_name">Work with us</li>
           <li>
@@ -310,14 +324,17 @@
         <ul class="box"></ul>
         <ul class="box input-box">
           <li class="link_name">Subscribe</li>
-          <li><input type="text" placeholder="Enter your email" /></li>
+          <li>
+            <input type="text" placeholder="Enter your email" />
+          </li>
           <li><input type="button" value="Subscribe" /></li>
         </ul>
       </div>
     </div>
     <div class="bottom-details">
       <div class="bottom_text">
-        <span class="copyright_text">Copyright © 2022 <a href="#">UNCB.</a>All rights reserved</span>
+        <span class="copyright_text">Copyright © 2022 <a href="#">UNCB.</a>All rights
+          reserved</span>
         <span class="policy_terms">
           <a href="#">Privacy policy</a>
           <a href="#">Terms & conditions</a>
