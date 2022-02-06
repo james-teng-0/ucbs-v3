@@ -506,7 +506,7 @@ a:hover {
 .conference {
   display: block;
   width: 100%;   
-  height:40vh;
+  height:500px;
   object-fit: cover;
 }
 
