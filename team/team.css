@@ -545,7 +545,6 @@ a:hover {
 
 .team-img {
 	position: relative;
-	border-radius: 20px;
 	overflow: hidden;
 }
 
@@ -888,28 +887,16 @@ footer .bottom-details .bottom_text {
   margin-bottom: 50px;
 }
 
-.row-1 {
-  height: 400px;
-}
-
-.row-2 {
-  height: 400px;
-}
-
-.row-2 .container {
-  height: 100%;
-}
-
-.row-2 .container .row {
-  height: 50%;
-}
-
 .small-row {
-  height: 250px;
+  height: calc(540px / 2);
+}
+
+.small-row.row {
+  margin-bottom: 0;
 }
 
 .large-row {
-  height: 500px;
+  height: 540px;
 }
 
 .small-row img, .large-row img {
