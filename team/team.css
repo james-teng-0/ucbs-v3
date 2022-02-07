@@ -883,6 +883,23 @@ footer .bottom-details .bottom_text {
   height: 100%;
 }
 
+.team-member h6 {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 15px;
+}
+
+#exec-member-1 .team-member .team-img img {
+  object-fit: cover;
+}
+
+.container img {
+  object-fit: cover;
+}
+
+.team-grid {
+  width: 750px;
+}
+
 .team-grid .row {
   margin-bottom: 50px;
 }
@@ -906,5 +923,17 @@ footer .bottom-details .bottom_text {
 .small-row .team-member {
   border: 1px solid red;
   height: 100%;
+}
+
+#exec-section {
+  margin-top: 10vh;
+}
+
+.exec-header {
+  color:white;
+}
+
+#team-section {
+
 }
 

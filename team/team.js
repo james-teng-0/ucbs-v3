@@ -160,14 +160,14 @@ document.addEventListener("DOMContentLoaded", () => {
 				</div>
 			</div>
             <h6 style="color: white; margin: 10px 0 0 0;" >${memberData.name}</h6>
-            <h6 style="color: white; margin: 0 0 10px 0;"> ${memberData.role} </h6>
+            <h6 style="color: white; margin: 5px 0 0 0;"> ${memberData.role} </h6>
 		</div>
         `;
 
 		execContainer.innerHTML += content;
 	});
 
-    dirData.forEach((memberData) => {
+	dirData.forEach((memberData) => {
 		const dirContainer = document.getElementById(memberData.containerID);
 
 		const content = `
@@ -189,10 +189,37 @@ document.addEventListener("DOMContentLoaded", () => {
 				</div>
 			</div>
             <h6 style="color: white; margin: 10px 0 0 0;" >${memberData.name}</h6>
-            <h6 style="color: white; margin: 0 0 10px 0;"> ${memberData.role} </h6>
+            <h6 style="color: white; margin: 5px 0 0 0;"> ${memberData.role} </h6>
 		</div>
         `;
 
 		dirContainer.innerHTML += content;
 	});
 });
+
+
+// ************************STICKY SCROLLING EFFECT****************************************
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+	// Get the header
+	var header = document.querySelector(".exec-header");
+
+	// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+
+	var stop = document.querySelector("#stop");
+	var bottom = stop.offsetTop;
+
+	console.log(bottom, sticky);
+	if (bottom > window.pageYOffset && window.pageYOffset > sticky) {
+		header.style.transform = `translateY(${window.pageYOffset - sticky + 100}px)`
+		// header.style = "color: green;";
+	}
+}
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+	myFunction()
+};
+
+
