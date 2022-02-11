@@ -137,6 +137,24 @@ const dirData = [
 	},
 ];
 
+const advisorData = [
+	{
+		imgPath: "../sanjith.jpg",
+		name: "Sanjith De Silva",
+		description: "",
+		role: "Director of Socials",
+		containerID: "advisor-member-1",
+	},
+	{
+		imgPath: "../placeholder.png",
+		name: "Eunice Chan",
+		description: "",
+		role: "Director of Socials",
+		containerID: "advisor-member-2",
+	},
+];
+
+
 document.addEventListener("DOMContentLoaded", () => {
 	execData.forEach((memberData) => {
 		const execContainer = document.getElementById(memberData.containerID);
@@ -195,31 +213,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		dirContainer.innerHTML += content;
 	});
+
+	advisorData.forEach((memberData) => {
+		const advisorContainer = document.getElementById(memberData.containerID);
+
+		const content = `
+        <div class="team-member" style="border: 1px solid red; width: 100%; height: 100%;">
+			<div class="team-img" style="width: 100%; height: 75%;">
+				<img src=${memberData.imgPath} alt=""/>
+				<div class="overlay">
+					<div class="team-details text-center">
+						<p>
+							${memberData.description}
+						</p>
+						<div class="socials mt-20">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-google-plus"></i></a>
+							<a href="#"><i class="fa fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+            <h6 style="color: white; margin: 10px 0 0 0;" >${memberData.name}</h6>
+            <h6 style="color: white; margin: 5px 0 0 0;"> ${memberData.role} </h6>
+		</div>
+        `;
+
+		advisorContainer.innerHTML += content;
+	});
 });
 
 
 // ************************STICKY SCROLLING EFFECT****************************************
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-	// Get the header
-	var header = document.querySelector(".exec-header");
+// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+// 	// Get the header
+// 	var header = document.querySelector(".exec-header");
 
-	// Get the offset position of the navbar
-	var sticky = header.offsetTop;
+// 	// Get the offset position of the navbar
+// 	var sticky = header.offsetTop;
 
-	var stop = document.querySelector("#stop");
-	var bottom = stop.offsetTop;
+// 	var stop = document.querySelector("#stop");
+// 	var bottom = stop.offsetTop;
 
-	console.log(bottom, sticky);
-	if (bottom > window.pageYOffset && window.pageYOffset > sticky) {
-		header.style.transform = `translateY(${window.pageYOffset - sticky + 100}px)`
-		// header.style = "color: green;";
-	}
-}
+// 	console.log(bottom, sticky);
+// 	if (bottom > window.pageYOffset && window.pageYOffset > sticky) {
+// 		header.style.transform = `translateY(${window.pageYOffset - sticky + 100}px)`
+// 		// header.style = "color: green;";
+// 	}
+// }
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function () {
-	myFunction()
-};
+// // When the user scrolls the page, execute myFunction
+// window.onscroll = function () {
+// 	myFunction()
+// };
 
 
+$(".sticky").stick_in_parent();

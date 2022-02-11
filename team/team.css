@@ -10,6 +10,7 @@ html,
 body {
   background: #232946 !important;
 	/* background: white; */
+  overflow-x:hidden;
 }
 
 
@@ -879,7 +880,6 @@ footer .bottom-details .bottom_text {
 
 /* Poop */
 .box {
-  border: solid green 3px;
   height: 100%;
 }
 
@@ -921,7 +921,6 @@ footer .bottom-details .bottom_text {
 }
 
 .small-row .team-member {
-  border: 1px solid red;
   height: 100%;
 }
 
@@ -931,9 +930,43 @@ footer .bottom-details .bottom_text {
 
 .exec-header {
   color:white;
+  width: 50%; 
 }
 
 #team-section {
-
+  margin-top: 30vh;
 }
 
+
+.section-heading {
+  display:inline-block;
+}
+
+.small-heading {
+  font-size:2.5rem; 
+  font-family: Georgia; 
+  font-style: italic;
+}
+
+.text-center h2{
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+.text-center p {
+  width: 0;
+  min-width:100%;
+
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 15px;
+}
+
+.font-2 {
+  font-family: Georgia;
+} 
+
+#advisor-section {
+  margin-top: 30vh;
+  color: white; 
+}
