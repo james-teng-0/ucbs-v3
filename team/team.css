@@ -969,3 +969,7 @@ footer .bottom-details .bottom_text {
   margin-top: 30vh;
   color: white; 
 }
+
+#advisor-section .text-center h1 {
+  font-family: Georgia;
+}
