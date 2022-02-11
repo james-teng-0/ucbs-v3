@@ -152,6 +152,13 @@ const advisorData = [
 		role: "Director of Socials",
 		containerID: "advisor-member-2",
 	},
+	{
+		imgPath: "../placeholder.png",
+		name: "Holmen",
+		description: "",
+		role: "Director of Socials",
+		containerID: "advisor-member-3",
+	},
 ];
 
 
