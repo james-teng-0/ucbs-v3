@@ -167,8 +167,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		const execContainer = document.getElementById(memberData.containerID);
 
 		const content = `
-        <div class="team-member" style="width: 100%; height: 100%;">
-			<div class="team-img" style="width: 100%; height: 75%;">
+        <div class="team-member" style="width: 100%; padding-bottom: 20px; height: 100%;">
+			<div class="team-img" style="width: 100%; height: 85%;">
 				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">
 					<div class="team-details text-center">
@@ -183,8 +183,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					</div>
 				</div>
 			</div>
-            <h6 style="color: white; margin: 10px 0 0 0;" >${memberData.name}</h6>
-            <h6 style="color: white; margin: 5px 0 0 0;"> ${memberData.role} </h6>
+            <h6 style="color: white; margin: 20px 0 0 0;" >${memberData.name}</h6>
+            <h6 style="color: white; margin: 10px 0 0 0;"> ${memberData.role} </h6>
 		</div>
         `;
 
@@ -195,9 +195,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		const dirContainer = document.getElementById(memberData.containerID);
 
 		const content = `
-        <div class="team-member" style="border: 1px solid red; width: 100%; height: 100%;">
-			<div class="team-img" style="width: 100%; height: 75%;">
-				<img src=${memberData.imgPath} alt=""/>
+        <div class="team-member" style="width: 100%; height: 100%;">
+			<div class="team-img" style="width: 100%; height: 450px;">
+				<img src=${memberData.imgPath} alt="" style="object-fit: cover;"/>
 				<div class="overlay">
 					<div class="team-details text-center">
 						<p>
@@ -211,8 +211,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					</div>
 				</div>
 			</div>
-            <h6 style="color: white; margin: 10px 0 0 0;" >${memberData.name}</h6>
-            <h6 style="color: white; margin: 5px 0 0 0;"> ${memberData.role} </h6>
+            <h6 style="color: white; margin: 20px 0 0 0;" >${memberData.name}</h6>
+            <h6 style="color: white; margin: 10px 0 0 0;"> ${memberData.role} </h6>
 		</div>
         `;
 
@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		const content = `
         <div class="team-member" style="border: 1px solid red; width: 100%; height: 100%;">
-			<div class="team-img" style="width: 100%; height: 75%;">
+			<div class="team-img" style="width: 100%;">
 				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">
 					<div class="team-details text-center">
@@ -274,5 +274,3 @@ document.addEventListener("DOMContentLoaded", () => {
 // 	myFunction()
 // };
 
-
-$(".sticky").stick_in_parent();
