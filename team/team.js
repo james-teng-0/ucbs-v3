@@ -69,6 +69,13 @@ const execData = [
 		role: "Secretary",
 		containerID: "exec-member-10",
 	},
+	{
+		imgPath: "../placeholder.png",
+		name: "Desmond Ma",
+		description: "	",
+		role: "Secretary",
+		containerID: "exec-member-11",
+	},
 ];
 
 const dirData = [
@@ -80,7 +87,7 @@ const dirData = [
 		containerID: "dir-member-1",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../sanjith.jpg",
 		name: "Eunice Chan",
 		description: "",
 		role: "Director of Socials",
@@ -101,14 +108,14 @@ const dirData = [
 		containerID: "dir-member-4",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../sanjith.jpg",
 		name: "Nala Hong",
 		description: "",
 		role: "Director of Careers",
 		containerID: "dir-member-5",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../sanjith.jpg",
 		name: "Catherine Xie",
 		description: "",
 		role: "Director of Careers",
@@ -223,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const advisorContainer = document.getElementById(memberData.containerID);
 
 		const content = `
-        <div class="team-member" style="border: 1px solid red; width: 100%; height: 100%;">
+        <div class="team-member" style="width: 100%; height: 100%;">
 			<div class="team-img" style="width: 100%;">
 				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">
@@ -274,3 +281,4 @@ document.addEventListener("DOMContentLoaded", () => {
 // 	myFunction()
 // };
 
+$(".sticky").stick_in_parent()
