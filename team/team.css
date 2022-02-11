@@ -925,7 +925,6 @@ footer .bottom-details .bottom_text {
 }
 
 #exec-section {
-  margin-top: 10vh;
 }
 
 .exec-header {
@@ -933,8 +932,8 @@ footer .bottom-details .bottom_text {
   width: 50%; 
 }
 
-#team-section {
-  margin-top: 30vh;
+#dir-section {
+  margin-top: 10vh;
 }
 
 
