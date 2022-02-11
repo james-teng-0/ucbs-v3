@@ -139,22 +139,22 @@ const dirData = [
 
 const advisorData = [
 	{
-		imgPath: "../sanjith.jpg",
-		name: "Sanjith De Silva",
+		imgPath: "../placeholder.png",
+		name: "Cameron Baker",
 		description: "",
 		role: "Director of Socials",
 		containerID: "advisor-member-1",
 	},
 	{
 		imgPath: "../placeholder.png",
-		name: "Eunice Chan",
+		name: "Zhong Guan",
 		description: "",
 		role: "Director of Socials",
 		containerID: "advisor-member-2",
 	},
 	{
 		imgPath: "../placeholder.png",
-		name: "Holmen",
+		name: "Holmen Tham",
 		description: "",
 		role: "Director of Socials",
 		containerID: "advisor-member-3",
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const execContainer = document.getElementById(memberData.containerID);
 
 		const content = `
-        <div class="team-member" style="border: 1px solid red; width: 100%; height: 100%;">
+        <div class="team-member" style="width: 100%; height: 100%;">
 			<div class="team-img" style="width: 100%; height: 75%;">
 				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">

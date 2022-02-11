@@ -934,9 +934,12 @@ footer .bottom-details .bottom_text {
 
 #dir-section {
   margin-top: 10vh;
-}
-
-
+  border-top-style: solid;
+  border-color: #464647;
+  border-width: 1px;
+  background-color: #383c4e;
+} 
+  
 .section-heading {
   display:inline-block;
 }
@@ -966,7 +969,7 @@ footer .bottom-details .bottom_text {
 } 
 
 #advisor-section {
-  margin-top: 30vh;
+  margin-top: 10vh;
   color: white; 
 }
 
