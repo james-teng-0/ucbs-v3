@@ -1,15 +1,15 @@
 const execData = [
 	{
-		imgPath: "../kmao.png",
-		name: "Kevin Mao",
-		description: "You can call me K Meow",
+		imgPath: "../paj.jpg",
+		name: "Paj Sae Lim",
+		description: "CryptoGodPaj",
 		role: "Co-President",
 		containerID: "exec-member-1",
 	},
 	{
-		imgPath: "../paj.jpg",
-		name: "Paj Sae Lim",
-		description: "CryptoGodPaj",
+		imgPath: "../kmao.png",
+		name: "Kevin Mao",
+		description: "You can call me K Meow",
 		role: "Co-President",
 		containerID: "exec-member-2",
 	},
