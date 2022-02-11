@@ -178,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 						<div class="socials mt-20">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
 							<a href="#"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
@@ -207,7 +206,6 @@ document.addEventListener("DOMContentLoaded", () => {
 						<div class="socials mt-20">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
 							<a href="#"><i class="fa fa-envelope"></i></a>
 						</div>
 					</div>
