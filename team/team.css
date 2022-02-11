@@ -554,7 +554,7 @@ a:hover {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	padding: 5%;
+	/* padding: ; */
 	overflow: hidden;
 	width: 100%;
 	z-index: 2;
@@ -897,15 +897,15 @@ footer .bottom-details .bottom_text {
 }
 
 .team-grid {
-  width: 750px;
-}
-
-.team-grid .row {
-  margin-bottom: 50px;
+  width: 100%;
 }
 
 .small-row {
-  height: calc(540px / 2);
+  height: 450px;
+}
+
+.small-row .team-member .team-img {
+  height: 85%;
 }
 
 .small-row.row {
@@ -913,7 +913,11 @@ footer .bottom-details .bottom_text {
 }
 
 .large-row {
-  height: 540px;
+  height: 650px;
+} 
+
+.large-row-dir {
+  height: 550px;
 }
 
 .small-row img, .large-row img {
@@ -924,8 +928,6 @@ footer .bottom-details .bottom_text {
   height: 100%;
 }
 
-#exec-section {
-}
 
 .exec-header {
   color:white;
