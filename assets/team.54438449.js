@@ -59,4 +59,4 @@ import"./mobile.4eedd5ff.js";const r=[{imgPath:"../paj.jpg",name:"Paj Sae Lim",d
             <h6 style="color: white; margin: 10px 0 0 0;" >${e.name}</h6>
             <h6 style="color: white; margin: 5px 0 0 0;"> ${e.role} </h6>
 		</div>
-        `;i.innerHTML+=a})});$(".sticky").stick_in_parent();
+        `;i.innerHTML+=a})});$(window).width()>991&&$(".sticky").stick_in_parent();
