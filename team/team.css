@@ -978,3 +978,16 @@ footer .bottom-details .bottom_text {
 #advisor-section .text-center h1 {
   font-family: Georgia;
 }
+
+
+@media (max-width: 991px) {
+  #dir-section {
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.font-2 {
+  height: default;
+}
