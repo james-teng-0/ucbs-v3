@@ -901,19 +901,16 @@ footer .bottom-details .bottom_text {
 }
 
 .small-row {
-  height: 450px;
+  height: 285px;
+  margin-bottom: 10px;
 }
 
 .small-row .team-member .team-img {
   height: 85%;
 }
 
-.small-row.row {
-  margin-bottom: 0;
-}
-
 .large-row {
-  height: 650px;
+  height: 390px;
 } 
 
 .large-row-dir {
@@ -990,4 +987,16 @@ footer .bottom-details .bottom_text {
 
 .font-2 {
   height: default;
+}
+
+.team-member > h6 {
+  line-height: 12px;
+}
+
+.team-img {
+  height: 85%;
+}
+
+.exec-section .large-row .team-img {
+  height: calc(0.85 * 400px);
 }
