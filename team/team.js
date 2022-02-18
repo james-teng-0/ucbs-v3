@@ -281,6 +281,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // 	myFunction()
 // };
 
+if ($(window).width() > 991) {
+	$(".sticky").stick_in_parent()
+}
+
 window.addEventListener('resize', function(event){
 	// do stuff here
 	if ($(window).width() > 991) {
