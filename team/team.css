@@ -570,7 +570,7 @@ a:hover {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	overflow: hidden;
-	width: 100%;
+  width: 100%;
 }
 
 .team-img:hover .team-details {
@@ -893,10 +893,6 @@ footer .bottom-details .bottom_text {
 
 .container img {
   object-fit: cover;
-}
-
-.team-grid {
-  width: 100%;
 }
 
 .small-row {
