@@ -203,8 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		const content = `
         <div class="team-member" style="width: 100%; height: 100%;">
-			<div class="team-img" style="width: 100%; height: 450px;">
-				<img src=${memberData.imgPath} alt="" style="object-fit: cover;"/>
+			<div class="team-img" style="width: 100%;">
+				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">
 					<div class="team-details text-center">
 						<p>
@@ -218,8 +218,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					</div>
 				</div>
 			</div>
-            <h6>${memberData.name}</h6>
-            <h6> ${memberData.role} </h6>
+            <h6 style="color: white;">${memberData.name}</h6>
+            <h6 style="color: white;"> ${memberData.role} </h6>
 		</div>
         `;
 

@@ -571,7 +571,6 @@ a:hover {
 	transition: all 0.2s ease-in-out;
 	overflow: hidden;
 	width: 100%;
-
 }
 
 .team-img:hover .team-details {
@@ -901,20 +900,19 @@ footer .bottom-details .bottom_text {
 }
 
 .small-row {
-  height: 285px;
-  margin-bottom: 10px;
+  /* height: 285px; */
 }
 
 .small-row .team-member .team-img {
-  height: 85%;
+  height: 194px;
 }
 
 .large-row {
-  height: 390px;
+  /* height: 380px; */
 } 
 
 .large-row-dir {
-  height: 550px;
+  margin-bottom: 10px;
 }
 
 .small-row img, .large-row img {
@@ -993,10 +991,6 @@ footer .bottom-details .bottom_text {
   line-height: 12px;
 }
 
-.team-img {
-  height: 85%;
-}
-
-.exec-section .large-row .team-img {
-  height: calc(0.85 * 400px);
+.large-row .team-img img {
+  height: 267px;
 }
