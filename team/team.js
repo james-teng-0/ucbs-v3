@@ -14,14 +14,14 @@ const execData = [
 		containerID: "exec-member-2",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Roger Chen",
 		description: "CryptoGodRoger",
 		role: "Co-President",
 		containerID: "exec-member-3",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Avneet Singh",
 		description: "CryptoGodAvneet",
 		role: "Vice-President",
@@ -42,7 +42,7 @@ const execData = [
 		containerID: "exec-member-6",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Rachel Dai",
 		description: "USYD",
 		role: "Treasurer",
@@ -56,21 +56,21 @@ const execData = [
 		containerID: "exec-member-8",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Eva Wu",
 		description: "King",
 		role: "Secretary",
 		containerID: "exec-member-9",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Joan Yan",
 		description: "	",
 		role: "Secretary",
 		containerID: "exec-member-10",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../paj.jpg",
 		name: "Desmond Ma",
 		description: "	",
 		role: "Secretary",
@@ -149,7 +149,7 @@ const advisorData = [
 		imgPath: "../placeholder.png",
 		name: "Cameron Baker",
 		description: "",
-		role: "Director of Socials",
+		role: "Software Developer @ Lyra",
 		containerID: "advisor-member-1",
 	},
 	{
@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const execContainer = document.getElementById(memberData.containerID);
 
 		const content = `
-        <div class="team-member" style="width: 100%; padding-bottom: 20px; height: 100%;">
+		<div class="team-member" style="width: 100%; height: 100%;">
 			<div class="team-img" style="width: 100%;">
 				<img src=${memberData.imgPath} alt=""/>
 				<div class="overlay">
@@ -190,8 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
 					</div>
 				</div>
 			</div>
-            <h6 style="color: white;">${memberData.name}</h6>
-            <h6 style="color: white;""> ${memberData.role} </h6>
+			<h6 style="color: white;">${memberData.name}</h6>
+			<h6 style="color: white;"> ${memberData.role} </h6>
 		</div>
         `;
 

@@ -894,18 +894,18 @@ footer .bottom-details .bottom_text {
 .container img {
   object-fit: cover;
 }
-
+/* 
 .small-row {
-  /* height: 285px; */
-}
+  height: 285px;
+} */
 
 .small-row .team-member .team-img {
   height: 194px;
 }
 
-.large-row {
-  /* height: 380px; */
-} 
+/* .large-row {
+  height: 380px;
+}  */
 
 .large-row-dir {
   margin-bottom: 10px;
