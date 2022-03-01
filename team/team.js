@@ -56,7 +56,7 @@ const execData = [
 		containerID: "exec-member-8",
 	},
 	{
-		imgPath: "../paj.jpg",
+		imgPath: "../desmond.jpg",
 		name: "Desmond Ma",
 		description: "	",
 		role: "Secretary",
