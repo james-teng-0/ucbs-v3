@@ -570,8 +570,7 @@ a:hover {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	overflow: hidden;
-	width: 100%;
-
+  width: 100%;
 }
 
 .team-img:hover .team-details {
@@ -895,29 +894,21 @@ footer .bottom-details .bottom_text {
 .container img {
   object-fit: cover;
 }
-
-.team-grid {
-  width: 100%;
-}
-
+/* 
 .small-row {
-  height: 450px;
-}
+  height: 285px;
+} */
 
 .small-row .team-member .team-img {
-  height: 85%;
+  height: 194px;
 }
 
-.small-row.row {
-  margin-bottom: 0;
-}
-
-.large-row {
-  height: 650px;
-} 
+/* .large-row {
+  height: 380px;
+}  */
 
 .large-row-dir {
-  height: 550px;
+  margin-bottom: 10px;
 }
 
 .small-row img, .large-row img {
@@ -977,4 +968,25 @@ footer .bottom-details .bottom_text {
 
 #advisor-section .text-center h1 {
   font-family: Georgia;
+}
+
+
+@media (max-width: 991px) {
+  #dir-section {
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.font-2 {
+  height: default;
+}
+
+.team-member > h6 {
+  line-height: 12px;
+}
+
+.large-row .team-img img {
+  height: 267px;
 }
