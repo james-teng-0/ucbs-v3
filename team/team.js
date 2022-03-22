@@ -14,7 +14,7 @@ const execData = [
 		containerID: "exec-member-2",
 	},
 	{
-		imgPath: "../paj.jpg",
+		imgPath: "../roger.png",
 		name: "Roger Chen",
 		description: "CryptoGodRoger",
 		role: "Co-President",
