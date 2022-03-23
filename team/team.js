@@ -132,24 +132,24 @@ const dirData = [
 
 const advisorData = [
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../cameron.png",
 		name: "Cameron Baker",
 		description: "",
-		role: "Software Developer @ Lyra",
+		role: "Solidity Developer @ Lyra",
 		containerID: "advisor-member-1",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../zhong.png",
 		name: "Zhong Guan",
 		description: "",
-		role: "Director of Socials",
+		role: "Counsel",
 		containerID: "advisor-member-2",
 	},
 	{
-		imgPath: "../placeholder.png",
+		imgPath: "../holmen.png",
 		name: "Holmen Tham",
 		description: "",
-		role: "Director of Socials",
+		role: "Technical Advisor",
 		containerID: "advisor-member-3",
 	},
 ];
