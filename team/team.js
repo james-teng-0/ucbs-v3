@@ -21,7 +21,7 @@ const execData = [
 		containerID: "exec-member-3",
 	},
 	{
-		imgPath: "../paj.jpg",
+		imgPath: "../avneet.png",
 		name: "Avneet Singh",
 		description: "CryptoGodAvneet",
 		role: "Vice-President",
